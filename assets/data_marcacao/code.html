@@ -1,0 +1,549 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=Syne:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-container":"#554300","secondary":"#e2c471","on-error":"#690005","surface-container-high":"#2a292e","on-tertiary-fixed":"#002113","error-container":"#93000a","inverse-primary":"#735c00","surface-container-low":"#1b1b1f","on-secondary-fixed":"#241a00","tertiary":"#58e7aa","on-secondary-container":"#dabc6b","on-surface-variant":"#d0c5af","inverse-on-surface":"#303034","surface":"#131317","on-tertiary-fixed-variant":"#005236","surface-container-highest":"#353439","surface-tint":"#e9c349","on-secondary-fixed-variant":"#584400","on-surface":"#e4e1e7","surface-dim":"#131317","tertiary-container":"#33ca90","primary-container":"#d4af37","tertiary-fixed-dim":"#4edea3","on-background":"#e4e1e7","primary-fixed":"#ffe088","surface-container":"#1f1f23","tertiary-fixed":"#6ffbbe","surface-container-lowest":"#0e0e12","background":"#131317","surface-bright":"#39393d","on-secondary":"#3d2f00","on-primary-fixed":"#241a00","error":"#ffb4ab","on-primary":"#3c2f00","inverse-surface":"#e4e1e7","primary":"#f2ca50","on-error-container":"#ffdad6","secondary-container":"#604b00","on-tertiary":"#003824","primary-fixed-dim":"#e9c349","outline-variant":"#4d4635","secondary-fixed":"#ffe08b","surface-variant":"#353439","secondary-fixed-dim":"#e2c471","on-tertiary-container":"#005035","outline":"#99907c","on-primary-fixed-variant":"#574500"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter":"1.5rem","gutter-mobile":"1rem","space-lg":"1.5rem","margin-mobile":"1.25rem","space-sm":"0.5rem","space-md":"1rem","margin":"3rem","space-xs":"0.25rem","space-xl":"2.5rem"},fontFamily:{"headline-md":["Syne"],"headline-lg-mobile":["Syne"],"headline-sm":["Syne"],"label-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"display-hero-mobile":["Syne"],"label-caps":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"display-hero":["Syne"],"body-sm":["Plus Jakarta Sans"],"headline-lg":["Syne"]},fontSize:{"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"0em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"600"}],"body-md":["15px",{lineHeight:"24px",letterSpacing:"0.01em",fontWeight:"400"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"0em",fontWeight:"400"}],"display-hero-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-caps":["11px",{lineHeight:"16px",letterSpacing:"0.12em",fontWeight:"700"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.02em",fontWeight:"600"}],"display-hero":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"700"}],"body-sm":["13px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"400"}],"headline-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen selection:bg-primary selection:text-on-primary"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_4px_24px_rgba(0,0,0,0.6)]"><div class="h-20 w-full px-gutter md:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="InkCraft Studio Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf_dQRvL-EWcqhqiDd0Ur0kw5Fr2SYXkTGY8TFf1skxUfYpWtfXTVIZhQ_GX4vLKBcQnqaEtDrYrrHBjGVGg4GDZT0ni6SHT0grZSMK-IJq0S3clCCtV4hIbCIYZo6g49bvQGYYgvVazJxyvfMfEw42tzOTh75lW_DvWPyX200GMrWiFvHOOXmkJAGmRaADG87xeqOpEQC6qTMX41UICXwlQyCeWg7NqZypZX40TI"/><a class="font-headline-sm text-headline-sm tracking-tight text-on-surface hover:text-primary transition-colors" data-path="portfolio" href="#">INKCRAFT</a><span class="hidden lg:inline-block font-label-caps text-label-caps uppercase px-space-xs py-0.5 rounded-DEFAULT bg-surface-container-high text-secondary border border-outline-variant/40 ml-space-xs">Atelier</span></div><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="text-primary font-bold border-b-2 border-primary"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface py-space-xs transition-colors" data-path="portfolio" href="#">Portfólio</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface py-space-xs transition-colors" data-path="tatuadores" href="#">Tatuadores</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface py-space-xs transition-colors" data-path="o-estudio" href="#">O Estúdio</a></nav><div class="flex items-center gap-space-sm md:gap-space-md"><a class="font-label-lg text-label-lg text-on-surface hover:text-primary transition-colors px-space-sm py-space-xs" data-path="entrar" href="#">Entrar</a><a class="hidden sm:inline-flex items-center justify-center font-label-lg text-label-lg text-on-primary bg-primary hover:bg-primary-fixed hover:text-on-primary-fixed px-space-md py-space-sm rounded-lg shadow-[0_0_24px_-4px_rgba(212,175,55,0.25)] transition-all font-semibold" data-path="agendar-sessao" href="#">Agendar Sessão</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Top Ambient Glow Aura -->
+<div class="relative w-full overflow-hidden">
+<div class="absolute -top-32 left-1/2 -translate-x-1/2 w-[720px] h-[280px] bg-primary/10 rounded-full blur-[140px] pointer-events-none"></div>
+<div class="w-full px-gutter md:px-margin py-space-lg space-y-space-xl relative z-10">
+<!-- STEPPER WIZARD -->
+<section aria-label="Progresso do Agendamento" class="w-full bg-surface-container-lowest/80 backdrop-blur-md rounded-xl p-space-md sm:p-space-lg shadow-xl">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-space-sm sm:gap-space-md">
+<!-- Step 1: Completed -->
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low transition-all">
+<div class="w-8 h-8 rounded-full bg-primary/20 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase">Etapa 01</p>
+<p class="font-label-lg text-label-lg text-on-surface truncate">Artista &amp; Escala</p>
+</div>
+</div>
+<!-- Step 2: Completed -->
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low transition-all">
+<div class="w-8 h-8 rounded-full bg-primary/20 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase">Etapa 02</p>
+<p class="font-label-lg text-label-lg text-on-surface truncate">Conceito &amp; Memorial</p>
+</div>
+</div>
+<!-- Step 3: ACTIVE FOCUS (Gold Illumination) -->
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-high shadow-[0_0_24px_-4px_rgba(212,175,55,0.22)] relative overflow-hidden transition-all">
+<div class="absolute left-0 top-0 bottom-0 w-1 bg-primary"></div>
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 font-bold font-label-md text-label-md shadow-md">
+              03
+            </div>
+<div class="min-w-0">
+<div class="flex items-center gap-space-xs">
+<p class="font-label-caps text-label-caps text-primary uppercase font-bold tracking-wider">Etapa 03 Ativa</p>
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-ping"></span>
+</div>
+<p class="font-headline-sm text-headline-sm text-on-surface truncate">Data &amp; Janela</p>
+</div>
+</div>
+<!-- Step 4: Next -->
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-lowest opacity-60">
+<div class="w-8 h-8 rounded-full bg-surface-container-highest text-on-surface-variant flex items-center justify-center shrink-0 font-label-md text-label-md">
+              04
+            </div>
+<div class="min-w-0">
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase">Etapa 04</p>
+<p class="font-label-lg text-label-lg text-on-surface-variant truncate">Depósito &amp; Caução</p>
+</div>
+</div>
+</div>
+</section>
+<!-- PREVIOUS SELECTIONS CAPSULE BANNER -->
+<section class="w-full bg-surface-container-low rounded-xl p-space-md flex flex-wrap items-center justify-between gap-space-md shadow-sm">
+<div class="flex flex-wrap items-center gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-10 h-10 rounded-full overflow-hidden shrink-0 shadow-inner bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Close-up portrait of master tattoo artist Renan Costa with focused gaze, subtle ink tattoos on hands, dark high-fashion atelier ambience with moody chiaroscuro lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCETlH9lseezvIlkSiOb64KJ5_iV85kYGx37HvDbhbdw35u7b__yxoE7oxYwSjF7QSWenAigzBGAwf0o89h9vZk-tt6L3vfMLgGVc0iC4_lyFy14qikxlFWHZFqbydj7Bd1zcaQld6cjgLHfWAvGr7MsURA1bIVX5LfSBojjam_1EZ1D9r3N0589AIFVGcJP1f9McnwzuOMjteGJOFoSZ6X1IpIaD4i_OMEzan4J20"/>
+</div>
+<div>
+<p class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Residente Alocado</p>
+<p class="font-headline-sm text-headline-sm text-on-surface font-semibold">Renan Costa <span class="font-body-sm text-body-sm text-on-surface-variant">· Bancada A-01</span></p>
+</div>
+</div>
+<div class="h-8 w-px bg-surface-container-highest hidden sm:block"></div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-primary text-[20px]">architecture</span>
+<div>
+<p class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Obra Registrada</p>
+<p class="font-body-md text-body-md text-on-surface font-medium">Busto Clássico com Matriz de Metatron</p>
+</div>
+</div>
+<div class="h-8 w-px bg-surface-container-highest hidden lg:block"></div>
+<div class="flex items-center gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[20px]">straighten</span>
+<div>
+<p class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Dimensão &amp; Local</p>
+<p class="font-body-md text-body-md text-on-surface font-medium">12 × 8 cm · Antebraço Esquerdo</p>
+</div>
+</div>
+</div>
+<a class="inline-flex items-center gap-space-xs font-label-md text-label-md text-secondary hover:text-primary transition-colors py-1 px-space-sm rounded-lg bg-surface-container" href="#">
+<span class="material-symbols-outlined text-[16px]">edit_note</span>
+          Revisar Memorial
+        </a>
+</section>
+<!-- MAIN 12-COLUMN WORKING GRID -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT/CENTER CONTENT (8 COLS) -->
+<main class="lg:col-span-8 space-y-space-lg">
+<!-- 1. CALENDÁRIO CIRÚRGICO DE BANCADA -->
+<div class="bg-surface-container-low rounded-xl p-space-md sm:p-space-lg shadow-lg space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-sm">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Disponibilidade de Bancada</span>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Calendário Cirúrgico</h1>
+</div>
+<!-- Month Nav Switcher -->
+<div class="flex items-center gap-space-xs bg-surface-container-lowest p-1 rounded-xl shadow-inner self-start sm:self-auto">
+<button aria-label="Mês anterior" class="w-8 h-8 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_left</span>
+</button>
+<div class="px-space-sm text-center">
+<span class="font-headline-sm text-headline-sm text-primary tracking-wide">Outubro 2025</span>
+</div>
+<button aria-label="Próximo mês" class="w-8 h-8 rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container flex items-center justify-center transition-colors" type="button">
+<span class="material-symbols-outlined text-[18px]">chevron_right</span>
+</button>
+</div>
+</div>
+<!-- Calendar Filter/Legend Pills -->
+<div class="flex flex-wrap items-center gap-space-sm py-space-xs font-label-caps text-label-caps">
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-primary"></span> Data Selecionada
+              </span>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-tertiary"></span> Vagas Disponíveis
+              </span>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-secondary-container"></span> Protocolo Sanitário
+              </span>
+<span class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-full bg-surface-container-high text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-surface-container-highest"></span> Indisponível / Fechado
+              </span>
+</div>
+<!-- Calendar Days Header -->
+<div class="grid grid-cols-7 gap-1 text-center font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider py-2">
+<div>Dom</div>
+<div>Seg</div>
+<div>Ter</div>
+<div>Qua</div>
+<div>Qui</div>
+<div>Sex</div>
+<div>Sáb</div>
+</div>
+<!-- Calendar Grid Body (Outubro 2025) -->
+<div class="grid grid-cols-7 gap-1.5 sm:gap-2">
+<!-- Empty offsets September end -->
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container-lowest/30 text-on-surface-variant/30 font-label-md text-label-md flex flex-col justify-between">
+<span>28</span>
+</div>
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container-lowest/30 text-on-surface-variant/30 font-label-md text-label-md flex flex-col justify-between">
+<span>29</span>
+</div>
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container-lowest/30 text-on-surface-variant/30 font-label-md text-label-md flex flex-col justify-between">
+<span>30</span>
+</div>
+<!-- Day 01 - 04 -->
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container-lowest text-on-surface-variant/40 font-label-md text-label-md flex flex-col justify-between">
+<span>01</span>
+<span class="text-[10px] text-on-surface-variant/40">Esgotado</span>
+</div>
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container-lowest text-on-surface-variant/40 font-label-md text-label-md flex flex-col justify-between">
+<span>02</span>
+<span class="text-[10px] text-on-surface-variant/40">Esgotado</span>
+</div>
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container-lowest text-on-surface-variant/40 font-label-md text-label-md flex flex-col justify-between">
+<span>03</span>
+<span class="text-[10px] text-on-surface-variant/40">Esgotado</span>
+</div>
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container-lowest text-on-surface-variant/40 font-label-md text-label-md flex flex-col justify-between">
+<span>04</span>
+<span class="text-[10px] text-on-surface-variant/40">Esgotado</span>
+</div>
+<!-- Week 2 -->
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container-lowest/50 text-on-surface-variant/40 font-label-md text-label-md flex flex-col justify-between">
+<span>05</span>
+<span class="text-[10px] text-outline">Fechado</span>
+</div>
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container-lowest/50 text-on-surface-variant/40 font-label-md text-label-md flex flex-col justify-between">
+<span>06</span>
+<span class="text-[10px] text-outline">Fechado</span>
+</div>
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container-lowest text-on-surface-variant/40 font-label-md text-label-md flex flex-col justify-between">
+<span>07</span>
+<span class="text-[10px] text-on-surface-variant/40">Esgotado</span>
+</div>
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md flex flex-col justify-between hover:bg-surface-container-high cursor-pointer transition-colors group">
+<span class="group-hover:text-primary font-bold">08</span>
+<div class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="text-[10px] text-tertiary truncate">1 vaga</span>
+</div>
+</div>
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container-lowest text-on-surface-variant/40 font-label-md text-label-md flex flex-col justify-between">
+<span>09</span>
+<span class="text-[10px] text-on-surface-variant/40">Esgotado</span>
+</div>
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md flex flex-col justify-between hover:bg-surface-container-high cursor-pointer transition-colors group">
+<span class="group-hover:text-primary font-bold">10</span>
+<div class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="text-[10px] text-tertiary truncate">2 vagas</span>
+</div>
+</div>
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md flex flex-col justify-between hover:bg-surface-container-high cursor-pointer transition-colors group">
+<span class="group-hover:text-primary font-bold">11</span>
+<div class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+<span class="text-[10px] text-secondary truncate">Tarde</span>
+</div>
+</div>
+<!-- Week 3 -->
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container-lowest/50 text-on-surface-variant/40 font-label-md text-label-md flex flex-col justify-between">
+<span>12</span>
+<span class="text-[10px] text-outline">Fechado</span>
+</div>
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container-lowest/50 text-on-surface-variant/40 font-label-md text-label-md flex flex-col justify-between">
+<span>13</span>
+<span class="text-[10px] text-outline">Fechado</span>
+</div>
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md flex flex-col justify-between hover:bg-surface-container-high cursor-pointer transition-colors group">
+<span class="group-hover:text-primary font-bold">14</span>
+<div class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="text-[10px] text-tertiary truncate">1 vaga</span>
+</div>
+</div>
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container-high/60 text-secondary font-label-md text-label-md flex flex-col justify-between">
+<div class="flex justify-between items-start">
+<span>15</span>
+<span class="material-symbols-outlined text-[13px] text-secondary">sanitizer</span>
+</div>
+<span class="text-[10px] text-secondary truncate">Assepsia G.</span>
+</div>
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md flex flex-col justify-between hover:bg-surface-container-high cursor-pointer transition-colors group">
+<span class="group-hover:text-primary font-bold">16</span>
+<div class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="text-[10px] text-tertiary truncate">2 vagas</span>
+</div>
+</div>
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md flex flex-col justify-between hover:bg-surface-container-high cursor-pointer transition-colors group">
+<span class="group-hover:text-primary font-bold">17</span>
+<div class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="text-[10px] text-tertiary truncate">1 vaga</span>
+</div>
+</div>
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container-lowest text-on-surface-variant/40 font-label-md text-label-md flex flex-col justify-between">
+<span>18</span>
+<span class="text-[10px] text-on-surface-variant/40">Esgotado</span>
+</div>
+<!-- Week 4 -->
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container-lowest/50 text-on-surface-variant/40 font-label-md text-label-md flex flex-col justify-between">
+<span>19</span>
+<span class="text-[10px] text-outline">Fechado</span>
+</div>
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container-lowest/50 text-on-surface-variant/40 font-label-md text-label-md flex flex-col justify-between">
+<span>20</span>
+<span class="text-[10px] text-outline">Fechado</span>
+</div>
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md flex flex-col justify-between hover:bg-surface-container-high cursor-pointer transition-colors group">
+<span>21</span>
+<div class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="text-[10px] text-tertiary truncate">1 vaga</span>
+</div>
+</div>
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md flex flex-col justify-between hover:bg-surface-container-high cursor-pointer transition-colors group">
+<span>22</span>
+<div class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="text-[10px] text-tertiary truncate">1 vaga</span>
+</div>
+</div>
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md flex flex-col justify-between hover:bg-surface-container-high cursor-pointer transition-colors group">
+<span>23</span>
+<div class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="text-[10px] text-tertiary truncate">2 vagas</span>
+</div>
+</div>
+<!-- TARGET: DAY 24 (SELECTED IN GOLD) -->
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-primary-container/20 shadow-[0_0_20px_-2px_rgba(212,175,55,0.45)] text-primary font-label-md text-label-md flex flex-col justify-between relative overflow-hidden cursor-pointer">
+<div class="flex justify-between items-start">
+<span class="font-headline-sm text-headline-sm font-bold text-primary">24</span>
+<span class="w-2 h-2 rounded-full bg-primary animate-pulse"></span>
+</div>
+<div class="bg-primary text-on-primary font-label-caps text-[9px] px-1 py-0.5 rounded-DEFAULT text-center font-bold tracking-tight uppercase">
+                  Slot Ideal
+                </div>
+</div>
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md flex flex-col justify-between hover:bg-surface-container-high cursor-pointer transition-colors group">
+<span class="group-hover:text-primary font-bold">25</span>
+<div class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="text-[10px] text-tertiary truncate">1 vaga</span>
+</div>
+</div>
+<!-- Week 5 -->
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container-lowest/50 text-on-surface-variant/40 font-label-md text-label-md flex flex-col justify-between">
+<span>26</span>
+<span class="text-[10px] text-outline">Fechado</span>
+</div>
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container-lowest/50 text-on-surface-variant/40 font-label-md text-label-md flex flex-col justify-between">
+<span>27</span>
+<span class="text-[10px] text-outline">Fechado</span>
+</div>
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md flex flex-col justify-between hover:bg-surface-container-high cursor-pointer transition-colors group">
+<span class="group-hover:text-primary font-bold">28</span>
+<div class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="text-[10px] text-tertiary truncate">2 vagas</span>
+</div>
+</div>
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md flex flex-col justify-between hover:bg-surface-container-high cursor-pointer transition-colors group">
+<span class="group-hover:text-primary font-bold">29</span>
+<div class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="text-[10px] text-tertiary truncate">1 vaga</span>
+</div>
+</div>
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md flex flex-col justify-between hover:bg-surface-container-high cursor-pointer transition-colors group">
+<span class="group-hover:text-primary font-bold">30</span>
+<div class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="text-[10px] text-tertiary truncate">1 vaga</span>
+</div>
+</div>
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container text-on-surface font-label-md text-label-md flex flex-col justify-between hover:bg-surface-container-high cursor-pointer transition-colors group">
+<span class="group-hover:text-primary font-bold">31</span>
+<div class="flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+<span class="text-[10px] text-tertiary truncate">2 vagas</span>
+</div>
+</div>
+<!-- Next month offset -->
+<div class="h-16 sm:h-20 p-1.5 rounded-lg bg-surface-container-lowest/30 text-on-surface-variant/30 font-label-md text-label-md flex flex-col justify-between">
+<span>01</span>
+</div>
+</div>
+</div>
+<!-- 2. GRADE DE JANELAS DO DIA SELECIONADO -->
+<div class="bg-surface-container-low rounded-xl p-space-md sm:p-space-lg shadow-lg space-y-space-md">
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-xs">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Sexta-feira, 24 de Outubro de 2025</span>
+<h2 class="font-headline-md text-headline-md text-on-surface">Janelas de Bancada Disponíveis</h2>
+</div>
+<div class="flex items-center gap-space-xs text-on-surface-variant font-body-sm text-body-sm bg-surface-container px-space-sm py-1 rounded-full">
+<span class="material-symbols-outlined text-[16px] text-primary">timer</span>
+                Carga estimada de agulha: ~4h30
+              </div>
+</div>
+<div class="space-y-space-sm">
+<!-- Slot 1: Ocupado -->
+<div class="p-space-md rounded-xl bg-surface-container-lowest opacity-50 flex items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="w-1.5 h-12 rounded-full bg-outline-variant"></div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface-variant">11:00 — 13:30</span>
+<span class="font-label-caps text-label-caps uppercase px-1.5 py-0.5 rounded-DEFAULT bg-surface-container text-outline">Reservado</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Turno Matutino · Sessão Fechamento Costas (Em andamento)</p>
+</div>
+</div>
+<span class="material-symbols-outlined text-outline text-[22px]">lock</span>
+</div>
+<!-- Slot 2: RECOMENDADO / SELECIONADO (Gold Active Box) -->
+<div class="p-space-md rounded-xl bg-surface-container-high shadow-[0_0_24px_-4px_rgba(212,175,55,0.25)] flex flex-col md:flex-row md:items-center justify-between gap-space-md relative overflow-hidden transition-all">
+<div class="absolute left-0 top-0 bottom-0 w-2 bg-primary"></div>
+<div class="flex items-start sm:items-center gap-space-md pl-space-xs">
+<div class="w-10 h-10 rounded-full bg-primary/20 text-primary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+</div>
+<div>
+<div class="flex flex-wrap items-center gap-space-xs">
+<span class="font-headline-md text-headline-md text-primary font-bold">14:30 — 19:00</span>
+<span class="font-label-caps text-label-caps uppercase px-2 py-0.5 rounded-full bg-primary text-on-primary font-bold">Janela Ideal Selecionada</span>
+<span class="font-label-caps text-label-caps uppercase px-2 py-0.5 rounded-full bg-surface-container text-tertiary font-semibold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Sessão Única
+                      </span>
+</div>
+<p class="font-body-md text-body-md text-on-surface mt-1">Janela Cirúrgica Completa (~4h30 de agulha com pausa técnica inclusa).</p>
+<div class="flex items-center gap-space-md text-on-surface-variant font-label-md text-label-md pt-1">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px] text-secondary">check_circle</span> Renan Costa exclusivo</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[15px] text-secondary">check_circle</span> Box VIP A-01</span>
+</div>
+</div>
+</div>
+<div class="flex items-center gap-space-sm self-end md:self-center shrink-0">
+<span class="font-label-caps text-label-caps uppercase text-primary font-bold tracking-wider px-space-sm py-1 rounded bg-primary/10">Ativa</span>
+</div>
+</div>
+<!-- Slot 3: Crepúsculo / Parcial -->
+<div class="p-space-md rounded-xl bg-surface-container hover:bg-surface-container-high transition-colors flex items-center justify-between gap-space-md cursor-pointer group">
+<div class="flex items-center gap-space-md">
+<div class="w-1.5 h-12 rounded-full bg-secondary"></div>
+<div>
+<div class="flex items-center gap-space-xs">
+<span class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">19:30 — 20:30</span>
+<span class="font-label-caps text-label-caps uppercase px-1.5 py-0.5 rounded-DEFAULT bg-surface-container-high text-secondary">Janela Crepúsculo</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Apenas Ajuste de Traço fino ou Avaliação Anatomotécnica presencial.</p>
+</div>
+</div>
+<button class="font-label-md text-label-md text-on-surface-variant group-hover:text-primary transition-colors px-space-sm py-1 rounded bg-surface-container-low" type="button">
+                  Selecionar
+                </button>
+</div>
+</div>
+</div>
+<!-- 3. PROTOCOLOS DE PREPARO DE BANCADA & CHEGADA -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md">
+<!-- Sanitation protocol -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md space-y-space-sm relative overflow-hidden">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-secondary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">medical_services</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Assepsia Cirúrgica Grau B</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Intervalo mandatório de 60 minutos antes e após seu procedimento dedicado a esterilização por autoclave Classe B e renovação de ar filtrado HEPA no box.
+              </p>
+<div class="pt-space-xs flex items-center gap-space-xs font-label-caps text-label-caps text-secondary">
+<span class="w-2 h-2 rounded-full bg-secondary"></span>
+                Protocolo Sanitário InkCraft Atelier
+              </div>
+</div>
+<!-- Client Preparation -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow-md space-y-space-sm">
+<div class="w-8 h-8 rounded-lg bg-surface-container-high text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">fact_check</span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Diretrizes de Chegada</h3>
+<ul class="space-y-1.5 font-body-sm text-body-sm text-on-surface-variant">
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-primary text-[16px] shrink-0 mt-0.5">water_drop</span>
+<span>Hidratação dermoepidérmica contínua 48h antes da agulha.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-error text-[16px] shrink-0 mt-0.5">no_drinks</span>
+<span>Proibido ingestão alcoólica ou vasodilatadores 24h antes.</span>
+</li>
+<li class="flex items-start gap-2">
+<span class="material-symbols-outlined text-tertiary text-[16px] shrink-0 mt-0.5">schedule</span>
+<span>Chegada requerida com 15 minutos de antecedência.</span>
+</li>
+</ul>
+</div>
+</div>
+</main>
+<!-- RIGHT SIDEBAR: FICHA CURATORIAL ATUALIZADA (4 COLS) -->
+<aside class="lg:col-span-4 space-y-space-md lg:sticky lg:top-24">
+<div class="bg-surface-container-low rounded-xl p-space-md sm:p-space-lg shadow-xl space-y-space-md">
+<!-- Atelier Header -->
+<div class="flex items-center justify-between pb-space-sm border-b border-surface-container-highest">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">Ordem de Sessão #2025-884</span>
+<h3 class="font-headline-md text-headline-md text-on-surface font-semibold">Ficha Curatorial</h3>
+</div>
+<div class="w-9 h-9 rounded-full bg-primary/10 text-primary flex items-center justify-center">
+<span class="material-symbols-outlined text-[20px]">bookmark</span>
+</div>
+</div>
+<!-- Artist & Work Card Mini -->
+<div class="bg-surface-container rounded-lg p-space-sm flex items-center gap-space-sm">
+<div class="w-12 h-12 rounded-lg overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Intricate geometric sacred geometry tattoo line work macro detail on human skin, black and grey fine needle, museum aesthetic lighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCTLjMVb71yhTSbdtiy41OxcHyUSOaFuEVlcTAzEksYOn9076NuConh4w39a-JSui8DcwIQirQAVBZG2iaUXRUgzAQx6oAg9Cx6GvWsjIOdJ3YsmrDwP8qF_dq7otXVUtX_K68hodE2cCN8y-SJm6zkRm0nE_8lF4mzxxHxIc6FX0ZMVPjQg-UWzVzt8EzlFdNOG4SMdv8AWNoSH67_sTg08058Z6xDXIq6n30MeOY"/>
+</div>
+<div class="min-w-0">
+<p class="font-label-caps text-label-caps text-secondary uppercase">Artista Selecionado</p>
+<p class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Renan Costa</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Bancada A-01 · Suíte VIP</p>
+</div>
+</div>
+<!-- Schedule Snapshot -->
+<div class="space-y-space-xs font-body-sm text-body-sm">
+<div class="flex justify-between py-1 text-on-surface-variant">
+<span>Data do Procedimento:</span>
+<span class="text-on-surface font-semibold">24/10/2025 (Sexta)</span>
+</div>
+<div class="flex justify-between py-1 text-on-surface-variant">
+<span>Janela Horária:</span>
+<span class="text-primary font-bold">14:30 — 19:00</span>
+</div>
+<div class="flex justify-between py-1 text-on-surface-variant">
+<span>Duração Estimada:</span>
+<span class="text-on-surface">1 Sessão (~4h30)</span>
+</div>
+<div class="flex justify-between py-1 text-on-surface-variant">
+<span>Local da Pele:</span>
+<span class="text-on-surface">Antebraço Esquerdo (12x8cm)</span>
+</div>
+</div>
+<!-- Financial Blueprint -->
+<div class="p-space-md rounded-lg bg-surface-container-lowest space-y-space-xs shadow-inner">
+<div class="flex justify-between items-center">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Investimento Total Previsto</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">R$ 2.400 — R$ 2.800</span>
+</div>
+<div class="flex justify-between items-center text-secondary">
+<span class="font-label-caps text-label-caps uppercase">Sinal / Caução de Bancada (Hoje)</span>
+<span class="font-headline-sm text-headline-sm font-bold text-primary">R$ 400,00</span>
+</div>
+<p class="font-body-sm text-[11px] text-on-surface-variant/70 leading-tight pt-1">
+                * O valor da reserva é 100% dedutível do saldo final quitado no dia da sessão.
+              </p>
+</div>
+<!-- Guarantee Notice -->
+<div class="flex items-center gap-space-xs text-on-surface-variant font-label-md text-label-md px-1">
+<span class="material-symbols-outlined text-[18px] text-tertiary">lock_reset</span>
+<span>Reagendamento gratuito com até 72h de antecedência.</span>
+</div>
+<!-- Action Buttons -->
+<div class="pt-space-xs space-y-space-sm">
+<a class="w-full inline-flex items-center justify-center gap-space-xs font-label-lg text-label-lg text-on-primary bg-primary hover:bg-primary-fixed hover:text-on-primary-fixed py-space-md px-space-lg rounded-lg font-bold shadow-[0_0_24px_-4px_rgba(212,175,55,0.35)] transition-all" href="#">
+<span>Avançar para Depósito &amp; Caução</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<a class="w-full inline-flex items-center justify-center gap-space-xs font-label-lg text-label-lg text-on-surface hover:text-primary py-space-sm px-space-md rounded-lg bg-surface-container hover:bg-surface-container-high transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Voltar para Memorial Conceitual</span>
+</a>
+</div>
+<!-- Fine print note -->
+<div class="text-center font-label-caps text-label-caps text-on-surface-variant/50 uppercase tracking-widest pt-space-xs">
+              Atelier Protocol · InkCraft São Paulo
+            </div>
+</div>
+<!-- Studio Support Mini-Card -->
+<div class="bg-surface-container-low rounded-xl p-space-md flex items-center justify-between gap-space-md shadow-sm">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-surface-container-high flex items-center justify-center text-secondary">
+<span class="material-symbols-outlined text-[18px]">support_agent</span>
+</div>
+<div>
+<p class="font-label-lg text-label-lg text-on-surface font-semibold">Precisa de ajuste especial?</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Concierge disponível via WhatsApp</p>
+</div>
+</div>
+<a class="text-primary hover:text-primary-fixed text-label-md font-semibold shrink-0" href="#">
+              Falar agora →
+            </a>
+</div>
+</aside>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/30"><div class="w-full px-gutter md:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-xl"><div class="space-y-space-sm"><div class="flex items-center gap-space-sm"><img alt="InkCraft Studio Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf_dQRvL-EWcqhqiDd0Ur0kw5Fr2SYXkTGY8TFf1skxUfYpWtfXTVIZhQ_GX4vLKBcQnqaEtDrYrrHBjGVGg4GDZT0ni6SHT0grZSMK-IJq0S3clCCtV4hIbCIYZo6g49bvQGYYgvVazJxyvfMfEw42tzOTh75lW_DvWPyX200GMrWiFvHOOXmkJAGmRaADG87xeqOpEQC6qTMX41UICXwlQyCeWg7NqZypZX40TI"/><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface">INKCRAFT</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">Ateliê exclusivo de alta tatuagem e expressão artística bespoke. Rigor anatômico, técnica refinada e atmosfera de contemplação.</p><div class="pt-space-xs flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Estúdio Operando em São Paulo &amp; Curitiba</span></div></div><div class="space-y-space-sm"><h3 class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">O Estúdio</h3><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li>Alameda dos Alfarrábios, 1280 - Jardins</li><li>São Paulo - SP, Brasil</li><li class="pt-space-xs text-on-surface">contato@inkcraft.art</li><li>+55 (11) 3088-4921</li></ul></div><div class="space-y-space-sm"><h3 class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Horários de Atendimento</h3><div class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><p class="flex justify-between max-w-xs"><span>Terça a Sexta</span><span class="text-on-surface">11h — 20h</span></p><p class="flex justify-between max-w-xs"><span>Sábado</span><span class="text-on-surface">10h — 19h</span></p><p class="flex justify-between max-w-xs"><span>Domingo &amp; Segunda</span><span class="text-outline">Exclusivo para Convidados</span></p></div></div><div class="space-y-space-sm"><h3 class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Conectar</h3><p class="font-body-sm text-body-sm text-on-surface-variant">Acompanhe exposições inéditas, aberturas de agenda e drops de flash art.</p><div class="flex items-center gap-space-sm pt-space-xs"><a aria-label="Instagram" class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">camera</span></a><a aria-label="Portfólio Digital" class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">palette</span></a><a aria-label="Localização" class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">location_on</span></a></div></div></div><div class="pt-space-lg border-t border-outline-variant/20 flex flex-col sm:flex-row items-center justify-between gap-space-md text-on-surface-variant font-label-md text-label-md"><p>© 2025 INKCRAFT Atelier de Tatuagem. Todos os direitos reservados.</p><div class="flex items-center gap-space-md"><a class="hover:text-on-surface transition-colors" href="#">Privacidade</a><a class="hover:text-on-surface transition-colors" href="#">Termos &amp; Consentimento</a><a class="hover:text-on-surface transition-colors" href="#">Biossegurança</a></div></div></div></footer></body></html>

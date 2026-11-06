@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=Syne:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-container":"#554300","secondary":"#e2c471","on-error":"#690005","surface-container-high":"#2a292e","on-tertiary-fixed":"#002113","error-container":"#93000a","inverse-primary":"#735c00","surface-container-low":"#1b1b1f","on-secondary-fixed":"#241a00","tertiary":"#58e7aa","on-secondary-container":"#dabc6b","on-surface-variant":"#d0c5af","inverse-on-surface":"#303034","surface":"#131317","on-tertiary-fixed-variant":"#005236","surface-container-highest":"#353439","surface-tint":"#e9c349","on-secondary-fixed-variant":"#584400","on-surface":"#e4e1e7","surface-dim":"#131317","tertiary-container":"#33ca90","primary-container":"#d4af37","tertiary-fixed-dim":"#4edea3","on-background":"#e4e1e7","primary-fixed":"#ffe088","surface-container":"#1f1f23","tertiary-fixed":"#6ffbbe","surface-container-lowest":"#0e0e12","background":"#131317","surface-bright":"#39393d","on-secondary":"#3d2f00","on-primary-fixed":"#241a00","error":"#ffb4ab","on-primary":"#3c2f00","inverse-surface":"#e4e1e7","primary":"#f2ca50","on-error-container":"#ffdad6","secondary-container":"#604b00","on-tertiary":"#003824","primary-fixed-dim":"#e9c349","outline-variant":"#4d4635","secondary-fixed":"#ffe08b","surface-variant":"#353439","secondary-fixed-dim":"#e2c471","on-tertiary-container":"#005035","outline":"#99907c","on-primary-fixed-variant":"#574500"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter":"1.5rem","gutter-mobile":"1rem","space-lg":"1.5rem","margin-mobile":"1.25rem","space-sm":"0.5rem","space-md":"1rem","margin":"3rem","space-xs":"0.25rem","space-xl":"2.5rem"},fontFamily:{"headline-md":["Syne"],"headline-lg-mobile":["Syne"],"headline-sm":["Syne"],"label-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"display-hero-mobile":["Syne"],"label-caps":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"display-hero":["Syne"],"body-sm":["Plus Jakarta Sans"],"headline-lg":["Syne"]},fontSize:{"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"0em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"600"}],"body-md":["15px",{lineHeight:"24px",letterSpacing:"0.01em",fontWeight:"400"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"0em",fontWeight:"400"}],"display-hero-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-caps":["11px",{lineHeight:"16px",letterSpacing:"0.12em",fontWeight:"700"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.02em",fontWeight:"600"}],"display-hero":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"700"}],"body-sm":["13px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"400"}],"headline-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen selection:bg-primary selection:text-on-primary"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_4px_24px_rgba(0,0,0,0.6)]"><div class="h-20 w-full px-gutter md:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="InkCraft Studio Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf_dQRvL-EWcqhqiDd0Ur0kw5Fr2SYXkTGY8TFf1skxUfYpWtfXTVIZhQ_GX4vLKBcQnqaEtDrYrrHBjGVGg4GDZT0ni6SHT0grZSMK-IJq0S3clCCtV4hIbCIYZo6g49bvQGYYgvVazJxyvfMfEw42tzOTh75lW_DvWPyX200GMrWiFvHOOXmkJAGmRaADG87xeqOpEQC6qTMX41UICXwlQyCeWg7NqZypZX40TI"/><a class="font-headline-sm text-headline-sm tracking-tight text-on-surface hover:text-primary transition-colors" data-path="portfolio" href="#">INKCRAFT</a><span class="hidden lg:inline-block font-label-caps text-label-caps uppercase px-space-xs py-0.5 rounded-DEFAULT bg-surface-container-high text-secondary border border-outline-variant/40 ml-space-xs">Atelier</span></div><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="text-primary font-bold border-b-2 border-primary"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface py-space-xs transition-colors" data-path="portfolio" href="#">Portfólio</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface py-space-xs transition-colors" data-path="tatuadores" href="#">Tatuadores</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface py-space-xs transition-colors" data-path="o-estudio" href="#">O Estúdio</a></nav><div class="flex items-center gap-space-sm md:gap-space-md"><a class="font-label-lg text-label-lg text-on-surface hover:text-primary transition-colors px-space-sm py-space-xs" data-path="entrar" href="#">Entrar</a><a class="hidden sm:inline-flex items-center justify-center font-label-lg text-label-lg text-on-primary bg-primary hover:bg-primary-fixed hover:text-on-primary-fixed px-space-md py-space-sm rounded-lg shadow-[0_0_24px_-4px_rgba(212,175,55,0.25)] transition-all font-semibold" data-path="agendar-sessao" href="#">Agendar Sessão</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<div class="relative w-full overflow-hidden px-gutter md:px-margin py-space-lg lg:py-space-xl">
+<div class="pointer-events-none absolute -top-40 right-1/4 h-96 w-96 rounded-full bg-primary/10 blur-[130px]"></div>
+<div class="pointer-events-none absolute top-1/2 left-[-100px] h-80 w-80 rounded-full bg-secondary-container/20 blur-[120px]"></div>
+<!-- Stepper Header -->
+<div class="max-w-7xl mx-auto w-full mb-space-xl">
+<div class="flex flex-col md:flex-row md:items-end justify-between gap-space-sm mb-space-lg">
+<div>
+<div class="flex items-center gap-space-xs mb-space-xs">
+<span class="w-1.5 h-1.5 rounded-full bg-primary animate-pulse"></span>
+<span class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Protocolo de Confirmação • Fase Final</span>
+</div>
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">Depósito de Garantia &amp; Caução Escrow</h1>
+</div>
+<div class="flex items-center gap-space-sm">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Criptografia Ponta a Ponta</span>
+<span class="inline-flex items-center gap-1 px-space-xs py-0.5 rounded-full bg-tertiary-fixed-dim/20 text-tertiary text-[11px] font-semibold">
+<span class="material-symbols-outlined text-[14px]">lock</span> TLS 1.3 / ISO-27001
+          </span>
+</div>
+</div>
+<!-- 4-Step Wizard Stepper -->
+<div class="grid grid-cols-2 md:grid-cols-4 gap-space-sm">
+<!-- Step 1 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center gap-space-sm opacity-90 transition-all hover:bg-surface-container">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-caps text-label-caps uppercase text-secondary">Etapa 01</p>
+<p class="font-label-lg text-label-lg text-on-surface truncate">Artista &amp; Escala</p>
+</div>
+</div>
+<!-- Step 2 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center gap-space-sm opacity-90 transition-all hover:bg-surface-container">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-caps text-label-caps uppercase text-secondary">Etapa 02</p>
+<p class="font-label-lg text-label-lg text-on-surface truncate">Conceito &amp; Memorial</p>
+</div>
+</div>
+<!-- Step 3 -->
+<div class="bg-surface-container-low p-space-sm rounded-lg flex items-center gap-space-sm opacity-90 transition-all hover:bg-surface-container">
+<div class="w-8 h-8 rounded-full bg-primary-container text-on-primary-container flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[18px]">check</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-caps text-label-caps uppercase text-secondary">Etapa 03</p>
+<p class="font-label-lg text-label-lg text-on-surface truncate">Data &amp; Janela</p>
+</div>
+</div>
+<!-- Step 4 (ACTIVE) -->
+<div class="bg-surface-container-high p-space-sm rounded-lg flex items-center gap-space-sm shadow-[0_0_24px_-4px_rgba(212,175,55,0.28)] ring-1 ring-primary/40 relative">
+<div class="absolute -top-1.5 right-3 px-2 py-0.2 rounded-full bg-primary text-on-primary text-[9px] font-bold uppercase tracking-wider">Ativa</div>
+<div class="w-8 h-8 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 font-bold text-sm">
+            04
+          </div>
+<div class="min-w-0">
+<p class="font-label-caps text-label-caps uppercase text-primary font-bold">Etapa 04</p>
+<p class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Depósito &amp; Caução</p>
+</div>
+</div>
+</div>
+</div>
+<!-- Main Content Grid -->
+<div class="max-w-7xl mx-auto w-full grid grid-cols-1 lg:grid-cols-12 gap-space-lg">
+<!-- LEFT COLUMN: Payment & Escrow Guarantee (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-lg">
+<!-- Escrow Value Callout Card -->
+<div class="bg-surface-container-high rounded-xl p-space-lg relative overflow-hidden shadow-xl">
+<div class="absolute top-0 right-0 w-48 h-48 bg-primary/10 rounded-full blur-2xl pointer-events-none"></div>
+<div class="relative z-10 flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div>
+<div class="flex items-center gap-2 mb-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">shield_with_heart</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary">Retenção Fiduciária de Sessão</span>
+</div>
+<h2 class="font-headline-md text-headline-md text-on-surface">Caução de Reserva</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm mt-1">
+                Garantia deduzida integralmente do montante final liquidado na bancada cirúrgica.
+              </p>
+</div>
+<div class="bg-surface-container-lowest/90 px-space-md py-space-sm rounded-lg text-right self-start sm:self-auto min-w-[160px]">
+<span class="font-label-caps text-label-caps uppercase text-outline block">Sinal em Custódia</span>
+<span class="font-display-hero-mobile text-display-hero-mobile text-primary font-bold tracking-tight">R$ 400<span class="text-headline-sm font-normal text-on-surface-variant">,00</span></span>
+</div>
+</div>
+<!-- Escrow Shield Guarantee Banner -->
+<div class="mt-space-md pt-space-md bg-surface-container-low/60 rounded-lg p-space-sm flex items-start gap-space-sm">
+<div class="p-2 rounded bg-surface-container-high text-primary shrink-0 mt-0.5">
+<span class="material-symbols-outlined text-[20px]">verified_user</span>
+</div>
+<div class="text-left">
+<h4 class="font-label-lg text-label-lg text-on-surface font-semibold">Conta Escrow InkCraft Protegida</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                Seu sinal permanece segregado em conta caução e não é liberado ao tatuador até a aprovação curatorial definitiva e sua presença física no estúdio. Reembolso integral automático em caso de desistência informada em até 48h antes da data reservada.
+              </p>
+</div>
+</div>
+</div>
+<!-- Payment Method Selection -->
+<div class="bg-surface-container-high rounded-xl p-space-lg shadow-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">payments</span>
+              Métodos de Liquidação Imediata
+            </h3>
+<span class="font-label-caps text-label-caps text-tertiary px-space-xs py-0.5 rounded bg-tertiary/10 flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span> Instantâneo 24/7
+            </span>
+</div>
+<!-- Tab Selection (Interactive Mockup) -->
+<div class="grid grid-cols-2 gap-space-xs bg-surface-container-lowest p-1 rounded-lg" id="payment-tabs">
+<button class="py-space-sm px-space-md rounded-lg font-label-lg text-label-lg font-semibold flex items-center justify-center gap-space-xs transition-all bg-surface-container text-primary shadow-sm" id="tab-btn-pix" onclick="switchTab('pix')" type="button">
+<span class="material-symbols-outlined text-[18px]">qr_code_2</span> PIX Instantâneo
+            </button>
+<button class="py-space-sm px-space-md rounded-lg font-label-lg text-label-lg font-semibold flex items-center justify-center gap-space-xs transition-all text-on-surface-variant hover:text-on-surface" id="tab-btn-card" onclick="switchTab('card')" type="button">
+<span class="material-symbols-outlined text-[18px]">credit_card</span> Cartão / Apple Pay
+            </button>
+</div>
+<!-- PIX Pane -->
+<div class="flex flex-col sm:flex-row items-center gap-space-lg p-space-md bg-surface-container-low rounded-lg" id="tab-pane-pix">
+<!-- QR Code stylized -->
+<div class="relative group p-3 bg-surface-container-lowest rounded-xl shadow-inner flex flex-col items-center shrink-0">
+<svg class="w-40 h-40" fill="none" viewbox="0 0 160 160" xmlns="http://www.w3.org/2000/svg">
+<!-- Outer modules & styling -->
+<rect fill="#131317" height="160" rx="8" width="160"></rect>
+<!-- Corner 1 -->
+<rect fill="#f2ca50" height="40" rx="4" width="40" x="14" y="14"></rect>
+<rect fill="#131317" height="24" rx="2" width="24" x="22" y="22"></rect>
+<rect fill="#f2ca50" height="12" rx="1" width="12" x="28" y="28"></rect>
+<!-- Corner 2 -->
+<rect fill="#f2ca50" height="40" rx="4" width="40" x="106" y="14"></rect>
+<rect fill="#131317" height="24" rx="2" width="24" x="114" y="22"></rect>
+<rect fill="#f2ca50" height="12" rx="1" width="12" x="120" y="28"></rect>
+<!-- Corner 3 -->
+<rect fill="#f2ca50" height="40" rx="4" width="40" x="14" y="106"></rect>
+<rect fill="#131317" height="24" rx="2" width="24" x="22" y="114"></rect>
+<rect fill="#f2ca50" height="12" rx="1" width="12" x="28" y="120"></rect>
+<!-- Pattern Matrix -->
+<rect fill="#e2c471" height="10" width="10" x="62" y="16"></rect>
+<rect fill="#d0c5af" height="8" width="14" x="80" y="24"></rect>
+<rect fill="#f2ca50" height="14" width="8" x="62" y="38"></rect>
+<rect fill="#f2ca50" height="10" width="16" x="78" y="44"></rect>
+<rect fill="#d0c5af" height="10" width="12" x="20" y="64"></rect>
+<rect fill="#f2ca50" height="14" width="14" x="40" y="70"></rect>
+<rect fill="#f2ca50" height="28" rx="3" width="28" x="64" y="66"></rect>
+<circle cx="78" cy="80" fill="#131317" r="6"></circle>
+<rect fill="#e2c471" height="20" width="10" x="104" y="64"></rect>
+<rect fill="#f2ca50" height="10" width="18" x="124" y="76"></rect>
+<rect fill="#d0c5af" height="24" width="12" x="62" y="106"></rect>
+<rect fill="#f2ca50" height="12" width="14" x="82" y="116"></rect>
+<rect fill="#e2c471" height="10" width="34" x="106" y="110"></rect>
+<rect fill="#f2ca50" height="14" width="22" x="120" y="130"></rect>
+</svg>
+<div class="mt-2 flex items-center gap-1 font-label-caps text-label-caps text-on-surface-variant">
+<span class="material-symbols-outlined text-[12px] text-tertiary">autorenew</span> Expira em 14:59
+              </div>
+</div>
+<!-- Copy Paste Key -->
+<div class="flex-1 w-full space-y-space-sm text-left">
+<div>
+<label class="font-label-caps text-label-caps text-outline uppercase block mb-1">Chave Copia e Cola PIX (Banco Central do Brasil)</label>
+<div class="flex items-center gap-space-xs bg-surface-container-lowest p-space-xs rounded-lg">
+<input class="bg-transparent font-mono text-[11px] text-on-surface-variant truncate w-full outline-none px-2 select-all" id="pix-copy-input" readonly="" type="text" value="00020126580014br.gov.bcb.pix0136inkcraft-escrow-f849d29c8e104445204000053039865802BR5925INKCRAFT ATELIER SP6009SAO PAULO62070503***6304D1B8"/>
+<button class="bg-primary hover:bg-primary-fixed text-on-primary font-label-md text-label-md px-space-sm py-1.5 rounded flex items-center gap-1 transition-all shrink-0" onclick="copyPixCode()" type="button">
+<span class="material-symbols-outlined text-[16px]">content_copy</span> Copiar
+                  </button>
+</div>
+</div>
+<div class="flex items-center gap-space-sm text-body-sm text-on-surface-variant">
+<span class="material-symbols-outlined text-tertiary text-[18px]">verified</span>
+<span>Validação e emissão do recibo caução em menos de 10 segundos.</span>
+</div>
+</div>
+</div>
+<!-- Card Pane (Hidden by default) -->
+<div class="hidden flex-col gap-space-sm p-space-md bg-surface-container-low rounded-lg" id="tab-pane-card">
+<div class="grid grid-cols-1 sm:grid-cols-2 gap-space-sm">
+<div class="sm:col-span-2">
+<label class="font-label-caps text-label-caps text-outline uppercase block mb-1">Número do Cartão</label>
+<div class="flex items-center bg-surface-container-lowest px-space-sm py-2 rounded-lg">
+<span class="material-symbols-outlined text-outline mr-2 text-[20px]">credit_card</span>
+<input class="bg-transparent text-body-md text-on-surface outline-none w-full placeholder:text-outline-variant font-mono" placeholder="0000 0000 0000 0000" type="text"/>
+</div>
+</div>
+<div>
+<label class="font-label-caps text-label-caps text-outline uppercase block mb-1">Validade</label>
+<input class="bg-surface-container-lowest px-space-sm py-2 rounded-lg text-body-md text-on-surface outline-none w-full placeholder:text-outline-variant font-mono" placeholder="MM/AA" type="text"/>
+</div>
+<div>
+<label class="font-label-caps text-label-caps text-outline uppercase block mb-1">Código de Segurança CVC</label>
+<input class="bg-surface-container-lowest px-space-sm py-2 rounded-lg text-body-md text-on-surface outline-none w-full placeholder:text-outline-variant font-mono" maxlength="4" placeholder="123" type="password"/>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant flex items-center gap-1 mt-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">info</span>
+              Saldo restante de bancada poderá ser parcelado em até 10x presencialmente no dia da sessão.
+            </p>
+</div>
+</div>
+<!-- Section: Clinical Compliance & Bio-safety checkboxes -->
+<div class="bg-surface-container-high rounded-xl p-space-lg shadow-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<h3 class="font-headline-sm text-headline-sm text-on-surface flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[22px]">medical_services</span>
+              Termos de Biossegurança Cirúrgica &amp; Consentimento
+            </h3>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest">ANVISA RDC 7807/23</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+            O InkCraft Atelier opera sob padrões hospitalares de assepsia, materiais esterilizados em autoclave classe B e pigmentos dermatologicamente certificados. Assinale os termos abaixo para habilitar o depósito:
+          </p>
+<div class="space-y-space-sm">
+<!-- Checkbox 1 -->
+<label class="flex items-start gap-space-sm p-space-sm bg-surface-container-low rounded-lg cursor-pointer hover:bg-surface-container transition-colors group">
+<div class="relative flex items-center mt-0.5">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 bg-surface-container-highest cursor-pointer accent-primary" id="term-anvisa" onchange="updateButtonState()" type="checkbox"/>
+</div>
+<div class="text-left">
+<p class="font-label-lg text-label-lg text-on-surface font-semibold group-hover:text-primary transition-colors">
+                  Protocolo Cirúrgico de Assepsia e Descarte de Agulhas
+                </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Concordo com os procedimentos de esterilização hospitalar e atesto a verificação do descarte de perfurocortantes 100% esterilizados antes do contato na pele.
+                </p>
+</div>
+</label>
+<!-- Checkbox 2 -->
+<label class="flex items-start gap-space-sm p-space-sm bg-surface-container-low rounded-lg cursor-pointer hover:bg-surface-container transition-colors group">
+<div class="relative flex items-center mt-0.5">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 bg-surface-container-highest cursor-pointer accent-primary" id="term-derma" onchange="updateButtonState()" type="checkbox"/>
+</div>
+<div class="text-left">
+<p class="font-label-lg text-label-lg text-on-surface font-semibold group-hover:text-primary transition-colors">
+                  Declaração Dermatológica da Região Anatômica
+                </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Declaro ausência de feridas abertas, dermatites agudas, queimaduras solares ou lesões psoriáticas ativas na área eleita (<span class="text-secondary font-semibold">Antebraço Esquerdo • Face Dorsal</span>).
+                </p>
+</div>
+</label>
+<!-- Checkbox 3 -->
+<label class="flex items-start gap-space-sm p-space-sm bg-surface-container-low rounded-lg cursor-pointer hover:bg-surface-container transition-colors group">
+<div class="relative flex items-center mt-0.5">
+<input checked="" class="w-4 h-4 rounded text-primary focus:ring-0 bg-surface-container-highest cursor-pointer accent-primary" id="term-cancel" onchange="updateButtonState()" type="checkbox"/>
+</div>
+<div class="text-left">
+<p class="font-label-lg text-label-lg text-on-surface font-semibold group-hover:text-primary transition-colors">
+                  Política de Cancelamento e Reagendamento (48 Horas)
+                </p>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Estou ciente de que avisos com antecedência mínima de 48h conferem estorno de 100% da caução ou remarcação sem custo adicional de bancada.
+                </p>
+</div>
+</label>
+</div>
+</div>
+</div>
+<!-- RIGHT COLUMN: Curatorial Commission Summary (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-lg">
+<!-- Curatorial Dossier Card -->
+<div class="bg-surface-container-high rounded-xl p-space-lg shadow-2xl relative overflow-hidden flex flex-col justify-between">
+<div class="space-y-space-md">
+<div class="flex items-center justify-between pb-space-sm">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">assignment</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary">Ficha Curatorial #IKC-9821</span>
+</div>
+<span class="font-label-caps text-label-caps text-tertiary bg-tertiary/10 px-2 py-0.5 rounded">Aprovado pelo Artista</span>
+</div>
+<!-- Artwork Preview and Master Info -->
+<div class="flex gap-space-md items-center bg-surface-container-low p-space-sm rounded-lg">
+<img class="w-16 h-16 rounded-lg object-cover ring-1 ring-primary/40 shrink-0" data-alt="Portrait of Renan Costa, master tattoo artist with intense focused expression, fine line tattoos on arms, working in a moody atmospheric tattoo studio with warm chiaroscuro rim lighting and dark charcoal backdrop" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDXy595L7JsQQuU0Hv19kMNwQeO7c33JBX4nNbs9xTky1u66uBAmW9z5ZF_ZaJd0qxS9w6S03lgjkgRPD7bDMrqATK1gveomvYnhkIWrbaeNR9n0pGMSyBNFSFmLIFQ2Gqs0xHDWAv9yNBLPFQjaHrvhpMTn9KFGtqDEv76XTLyn0XDDY649_1fhrXBfDcXR-vnoa5Ub-M7DXKOZLnD86bw6S6VRIAadI8aSovfMSA"/>
+<div class="min-w-0">
+<p class="font-label-caps text-label-caps uppercase text-secondary">Artista Selecionado</p>
+<h4 class="font-headline-sm text-headline-sm text-on-surface truncate">Renan Costa</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant truncate">Especialista • Gravura &amp; Geometria Sagrada</p>
+</div>
+</div>
+<!-- Artwork Meta Dossier -->
+<div class="space-y-space-xs text-body-sm">
+<div class="flex justify-between py-1 bg-surface-container-lowest/50 px-space-sm rounded">
+<span class="text-on-surface-variant">Conceito:</span>
+<span class="font-semibold text-on-surface text-right">Busto Clássico com Matriz de Metatron</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-lowest/50 px-space-sm rounded">
+<span class="text-on-surface-variant">Posicionamento:</span>
+<span class="font-semibold text-on-surface text-right">Antebraço Esquerdo (Face Dorsal)</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-lowest/50 px-space-sm rounded">
+<span class="text-on-surface-variant">Dimensão Estimada:</span>
+<span class="font-semibold text-on-surface text-right">18 cm x 11 cm (Escala Média)</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-lowest/50 px-space-sm rounded">
+<span class="text-on-surface-variant">Data &amp; Horário:</span>
+<span class="font-semibold text-primary text-right">24 de Outubro, 2025 às 14:30</span>
+</div>
+<div class="flex justify-between py-1 bg-surface-container-lowest/50 px-space-sm rounded">
+<span class="text-on-surface-variant">Ambiente:</span>
+<span class="font-semibold text-on-surface text-right">Suíte Cirúrgica A-01 (Jardins, SP)</span>
+</div>
+</div>
+<!-- Financial Decomposition -->
+<div class="pt-space-md">
+<h4 class="font-label-caps text-label-caps uppercase tracking-wider text-outline mb-space-xs">Decomposição Financeira</h4>
+<div class="space-y-space-xs font-body-md text-body-md">
+<div class="flex justify-between items-center text-on-surface-variant">
+<span>Estimativa Total da Obra:</span>
+<span class="text-on-surface font-semibold font-mono">R$ 2.400 — R$ 2.800</span>
+</div>
+<div class="flex justify-between items-center p-space-xs bg-primary/10 rounded-lg text-primary font-semibold">
+<span class="flex items-center gap-1 text-sm">
+<span class="material-symbols-outlined text-[16px]">lock</span> Caução Obrigatória Hoje:
+                  </span>
+<span class="font-mono text-base">R$ 400,00</span>
+</div>
+<div class="flex justify-between items-center text-on-surface-variant text-sm pt-1">
+<span>Saldo a Pagar na Bancada:</span>
+<span class="text-on-surface font-mono">R$ 2.000 — R$ 2.400</span>
+</div>
+</div>
+</div>
+<!-- Visual Security Trust Indicators -->
+<div class="pt-space-xs grid grid-cols-2 gap-2 text-center text-[11px] font-label-caps uppercase text-on-surface-variant">
+<div class="p-2 bg-surface-container-low rounded flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[16px]">security</span>
+<span>Auditado PCI-DSS</span>
+</div>
+<div class="p-2 bg-surface-container-low rounded flex items-center justify-center gap-1.5">
+<span class="material-symbols-outlined text-tertiary text-[16px]">sync_saved_locally</span>
+<span>Recibo Fiscal Automático</span>
+</div>
+</div>
+</div>
+<!-- Conversion Actions Block -->
+<div class="pt-space-lg space-y-space-sm mt-space-md">
+<!-- Primary Golden Action Button -->
+<button class="w-full py-space-md px-space-lg rounded-lg bg-primary hover:bg-primary-fixed text-on-primary font-headline-sm text-headline-sm font-bold flex items-center justify-center gap-space-sm shadow-[0_0_24px_-4px_rgba(212,175,55,0.35)] transition-all hover:scale-[1.01] active:scale-[0.99] cursor-pointer" id="confirm-booking-btn" onclick="executeBooking()" type="button">
+<span class="material-symbols-outlined text-[24px]">verified</span>
+<span>Confirmar Depósito &amp; Finalizar</span>
+</button>
+<!-- Secondary Back Step Action -->
+<a class="w-full py-space-sm px-space-md rounded-lg text-on-surface-variant hover:text-on-surface hover:bg-surface-container font-label-lg text-label-lg flex items-center justify-center gap-space-xs transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Voltar para Data &amp; Janela</span>
+</a>
+</div>
+</div>
+<!-- Studio Concierge Note -->
+<div class="p-space-md bg-surface-container rounded-lg flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-secondary text-[22px] shrink-0 mt-0.5">help_outline</span>
+<div class="text-left text-body-sm text-on-surface-variant">
+<p><strong class="text-on-surface">Dúvidas sobre o memorial técnico?</strong> Nosso concierge curatorial atende em tempo real via WhatsApp ou ligação direta no <span class="text-primary font-mono">+55 (11) 3088-4921</span>.</p>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- Micro-interaction feedback notification toast -->
+<div class="fixed bottom-6 right-6 transform translate-y-32 opacity-0 transition-all duration-300 pointer-events-none z-50 bg-surface-container-highest text-on-surface px-space-md py-space-sm rounded-lg shadow-2xl flex items-center gap-space-sm" id="toast-notification">
+<span class="material-symbols-outlined text-tertiary text-[20px]" id="toast-icon">check_circle</span>
+<span class="font-body-sm text-body-sm" id="toast-msg">Chave PIX copiada com sucesso!</span>
+</div>
+</div>
+<script>
+  function switchTab(tab) {
+    const pixBtn = document.getElementById('tab-btn-pix');
+    const cardBtn = document.getElementById('tab-btn-card');
+    const pixPane = document.getElementById('tab-pane-pix');
+    const cardPane = document.getElementById('tab-pane-card');
+
+    if (tab === 'pix') {
+      pixBtn.className = "py-space-sm px-space-md rounded-lg font-label-lg text-label-lg font-semibold flex items-center justify-center gap-space-xs transition-all bg-surface-container text-primary shadow-sm";
+      cardBtn.className = "py-space-sm px-space-md rounded-lg font-label-lg text-label-lg font-semibold flex items-center justify-center gap-space-xs transition-all text-on-surface-variant hover:text-on-surface";
+      pixPane.classList.remove('hidden');
+      pixPane.classList.add('flex');
+      cardPane.classList.add('hidden');
+      cardPane.classList.remove('flex');
+    } else {
+      cardBtn.className = "py-space-sm px-space-md rounded-lg font-label-lg text-label-lg font-semibold flex items-center justify-center gap-space-xs transition-all bg-surface-container text-primary shadow-sm";
+      pixBtn.className = "py-space-sm px-space-md rounded-lg font-label-lg text-label-lg font-semibold flex items-center justify-center gap-space-xs transition-all text-on-surface-variant hover:text-on-surface";
+      cardPane.classList.remove('hidden');
+      cardPane.classList.add('flex');
+      pixPane.classList.add('hidden');
+      pixPane.classList.remove('flex');
+    }
+  }
+
+  function showToast(message, isSuccess = true) {
+    const toast = document.getElementById('toast-notification');
+    const toastMsg = document.getElementById('toast-msg');
+    const toastIcon = document.getElementById('toast-icon');
+
+    toastMsg.textContent = message;
+    toastIcon.textContent = isSuccess ? 'check_circle' : 'warning';
+    toastIcon.className = isSuccess ? 'material-symbols-outlined text-tertiary text-[20px]' : 'material-symbols-outlined text-secondary text-[20px]';
+
+    toast.classList.remove('translate-y-32', 'opacity-0');
+    toast.classList.add('translate-y-0', 'opacity-100');
+
+    setTimeout(() => {
+      toast.classList.remove('translate-y-0', 'opacity-100');
+      toast.classList.add('translate-y-32', 'opacity-0');
+    }, 3200);
+  }
+
+  function copyPixCode() {
+    const input = document.getElementById('pix-copy-input');
+    navigator.clipboard.writeText(input.value).then(() => {
+      showToast('Chave Copia e Cola copiada para a área de transferência!');
+    }).catch(() => {
+      input.select();
+      document.execCommand('copy');
+      showToast('Chave Copia e Cola copiada!');
+    });
+  }
+
+  function updateButtonState() {
+    const c1 = document.getElementById('term-anvisa').checked;
+    const c2 = document.getElementById('term-derma').checked;
+    const c3 = document.getElementById('term-cancel').checked;
+    const btn = document.getElementById('confirm-booking-btn');
+
+    if (c1 && c2 && c3) {
+      btn.disabled = false;
+      btn.classList.remove('opacity-40', 'cursor-not-allowed');
+      btn.classList.add('hover:scale-[1.01]', 'cursor-pointer');
+    } else {
+      btn.disabled = true;
+      btn.classList.add('opacity-40', 'cursor-not-allowed');
+      btn.classList.remove('hover:scale-[1.01]', 'cursor-pointer');
+    }
+  }
+
+  function executeBooking() {
+    const c1 = document.getElementById('term-anvisa').checked;
+    const c2 = document.getElementById('term-derma').checked;
+    const c3 = document.getElementById('term-cancel').checked;
+
+    if (!c1 || !c2 || !c3) {
+      showToast('Por favor, aceite todos os termos e biossegurança.', false);
+      return;
+    }
+
+    const btn = document.getElementById('confirm-booking-btn');
+    btn.innerHTML = `<span class="material-symbols-outlined animate-spin text-[24px]">progress_activity</span> Validando Custódia Escrow...`;
+    
+    setTimeout(() => {
+      showToast('Depósito caução registrado! Redirecionando para seu passaporte...');
+      btn.innerHTML = `<span class="material-symbols-outlined text-[24px]">check_circle</span> Reserva Confirmada!`;
+      btn.classList.remove('bg-primary');
+      btn.classList.add('bg-tertiary', 'text-on-tertiary');
+    }, 1800);
+  }
+</script></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/30"><div class="w-full px-gutter md:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-xl"><div class="space-y-space-sm"><div class="flex items-center gap-space-sm"><img alt="InkCraft Studio Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf_dQRvL-EWcqhqiDd0Ur0kw5Fr2SYXkTGY8TFf1skxUfYpWtfXTVIZhQ_GX4vLKBcQnqaEtDrYrrHBjGVGg4GDZT0ni6SHT0grZSMK-IJq0S3clCCtV4hIbCIYZo6g49bvQGYYgvVazJxyvfMfEw42tzOTh75lW_DvWPyX200GMrWiFvHOOXmkJAGmRaADG87xeqOpEQC6qTMX41UICXwlQyCeWg7NqZypZX40TI"/><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface">INKCRAFT</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">Ateliê exclusivo de alta tatuagem e expressão artística bespoke. Rigor anatômico, técnica refinada e atmosfera de contemplação.</p><div class="pt-space-xs flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Estúdio Operando em São Paulo &amp; Curitiba</span></div></div><div class="space-y-space-sm"><h3 class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">O Estúdio</h3><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li>Alameda dos Alfarrábios, 1280 - Jardins</li><li>São Paulo - SP, Brasil</li><li class="pt-space-xs text-on-surface">contato@inkcraft.art</li><li>+55 (11) 3088-4921</li></ul></div><div class="space-y-space-sm"><h3 class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Horários de Atendimento</h3><div class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><p class="flex justify-between max-w-xs"><span>Terça a Sexta</span><span class="text-on-surface">11h — 20h</span></p><p class="flex justify-between max-w-xs"><span>Sábado</span><span class="text-on-surface">10h — 19h</span></p><p class="flex justify-between max-w-xs"><span>Domingo &amp; Segunda</span><span class="text-outline">Exclusivo para Convidados</span></p></div></div><div class="space-y-space-sm"><h3 class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Conectar</h3><p class="font-body-sm text-body-sm text-on-surface-variant">Acompanhe exposições inéditas, aberturas de agenda e drops de flash art.</p><div class="flex items-center gap-space-sm pt-space-xs"><a aria-label="Instagram" class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">camera</span></a><a aria-label="Portfólio Digital" class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">palette</span></a><a aria-label="Localização" class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">location_on</span></a></div></div></div><div class="pt-space-lg border-t border-outline-variant/20 flex flex-col sm:flex-row items-center justify-between gap-space-md text-on-surface-variant font-label-md text-label-md"><p>© 2025 INKCRAFT Atelier de Tatuagem. Todos os direitos reservados.</p><div class="flex items-center gap-space-md"><a class="hover:text-on-surface transition-colors" href="#">Privacidade</a><a class="hover:text-on-surface transition-colors" href="#">Termos &amp; Consentimento</a><a class="hover:text-on-surface transition-colors" href="#">Biossegurança</a></div></div></div></footer></body></html>

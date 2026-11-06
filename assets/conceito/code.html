@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=Syne:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-container":"#554300","secondary":"#e2c471","on-error":"#690005","surface-container-high":"#2a292e","on-tertiary-fixed":"#002113","error-container":"#93000a","inverse-primary":"#735c00","surface-container-low":"#1b1b1f","on-secondary-fixed":"#241a00","tertiary":"#58e7aa","on-secondary-container":"#dabc6b","on-surface-variant":"#d0c5af","inverse-on-surface":"#303034","surface":"#131317","on-tertiary-fixed-variant":"#005236","surface-container-highest":"#353439","surface-tint":"#e9c349","on-secondary-fixed-variant":"#584400","on-surface":"#e4e1e7","surface-dim":"#131317","tertiary-container":"#33ca90","primary-container":"#d4af37","tertiary-fixed-dim":"#4edea3","on-background":"#e4e1e7","primary-fixed":"#ffe088","surface-container":"#1f1f23","tertiary-fixed":"#6ffbbe","surface-container-lowest":"#0e0e12","background":"#131317","surface-bright":"#39393d","on-secondary":"#3d2f00","on-primary-fixed":"#241a00","error":"#ffb4ab","on-primary":"#3c2f00","inverse-surface":"#e4e1e7","primary":"#f2ca50","on-error-container":"#ffdad6","secondary-container":"#604b00","on-tertiary":"#003824","primary-fixed-dim":"#e9c349","outline-variant":"#4d4635","secondary-fixed":"#ffe08b","surface-variant":"#353439","secondary-fixed-dim":"#e2c471","on-tertiary-container":"#005035","outline":"#99907c","on-primary-fixed-variant":"#574500"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter":"1.5rem","gutter-mobile":"1rem","space-lg":"1.5rem","margin-mobile":"1.25rem","space-sm":"0.5rem","space-md":"1rem","margin":"3rem","space-xs":"0.25rem","space-xl":"2.5rem"},fontFamily:{"headline-md":["Syne"],"headline-lg-mobile":["Syne"],"headline-sm":["Syne"],"label-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"display-hero-mobile":["Syne"],"label-caps":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"display-hero":["Syne"],"body-sm":["Plus Jakarta Sans"],"headline-lg":["Syne"]},fontSize:{"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"0em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"600"}],"body-md":["15px",{lineHeight:"24px",letterSpacing:"0.01em",fontWeight:"400"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"0em",fontWeight:"400"}],"display-hero-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-caps":["11px",{lineHeight:"16px",letterSpacing:"0.12em",fontWeight:"700"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.02em",fontWeight:"600"}],"display-hero":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"700"}],"body-sm":["13px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"400"}],"headline-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen selection:bg-primary selection:text-on-primary"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_4px_24px_rgba(0,0,0,0.6)]"><div class="h-20 w-full px-gutter md:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="InkCraft Studio Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf_dQRvL-EWcqhqiDd0Ur0kw5Fr2SYXkTGY8TFf1skxUfYpWtfXTVIZhQ_GX4vLKBcQnqaEtDrYrrHBjGVGg4GDZT0ni6SHT0grZSMK-IJq0S3clCCtV4hIbCIYZo6g49bvQGYYgvVazJxyvfMfEw42tzOTh75lW_DvWPyX200GMrWiFvHOOXmkJAGmRaADG87xeqOpEQC6qTMX41UICXwlQyCeWg7NqZypZX40TI"/><a class="font-headline-sm text-headline-sm tracking-tight text-on-surface hover:text-primary transition-colors" data-path="portfolio" href="#">INKCRAFT</a><span class="hidden lg:inline-block font-label-caps text-label-caps uppercase px-space-xs py-0.5 rounded-DEFAULT bg-surface-container-high text-secondary border border-outline-variant/40 ml-space-xs">Atelier</span></div><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="text-primary font-bold border-b-2 border-primary"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface py-space-xs transition-colors" data-path="portfolio" href="#">Portfólio</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface py-space-xs transition-colors" data-path="tatuadores" href="#">Tatuadores</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface py-space-xs transition-colors" data-path="o-estudio" href="#">O Estúdio</a></nav><div class="flex items-center gap-space-sm md:gap-space-md"><a class="font-label-lg text-label-lg text-on-surface hover:text-primary transition-colors px-space-sm py-space-xs" data-path="entrar" href="#">Entrar</a><a class="hidden sm:inline-flex items-center justify-center font-label-lg text-label-lg text-on-primary bg-primary hover:bg-primary-fixed hover:text-on-primary-fixed px-space-md py-space-sm rounded-lg shadow-[0_0_24px_-4px_rgba(212,175,55,0.25)] transition-all font-semibold" data-path="agendar-sessao" href="#">Agendar Sessão</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<div class="w-full max-w-7xl mx-auto px-gutter-mobile md:px-margin py-space-md md:py-space-xl">
+<!-- STEPPER WIZARD -->
+<section class="w-full mb-space-xl">
+<div class="flex flex-col gap-space-sm">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">Protocolo Curatorial de Sessão</span>
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Etapa 02 de 04 • Imersão Visual</span>
+</div>
+<div class="grid grid-cols-2 lg:grid-cols-4 gap-space-xs md:gap-space-sm">
+<!-- Step 1: Concluído -->
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-low">
+<div class="w-7 h-7 rounded-full bg-tertiary-container/20 text-tertiary flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-[16px]" style="font-variation-settings: 'FILL' 1;">check</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase truncate">01. Concluído</p>
+<p class="font-label-lg text-label-lg text-on-surface truncate">Artista &amp; Escala</p>
+</div>
+</div>
+<!-- Step 2: Ativo com Destaque Dourado -->
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-high shadow-[0_0_24px_-4px_rgba(212,175,55,0.22)]">
+<div class="w-7 h-7 rounded-full bg-primary text-on-primary flex items-center justify-center shrink-0 font-headline-sm text-headline-sm">
+<span class="text-xs font-bold">02</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-caps text-label-caps text-primary uppercase truncate tracking-wider">Em Foco • Ativa</p>
+<p class="font-label-lg text-label-lg text-on-surface font-semibold truncate">Conceito &amp; Memorial</p>
+</div>
+</div>
+<!-- Step 3: Pendente -->
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-lowest opacity-60">
+<div class="w-7 h-7 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="text-xs font-medium">03</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase truncate">Próxima</p>
+<p class="font-label-lg text-label-lg text-on-surface-variant truncate">Data &amp; Janela</p>
+</div>
+</div>
+<!-- Step 4: Pendente -->
+<div class="flex items-center gap-space-sm p-space-sm rounded-lg bg-surface-container-lowest opacity-60">
+<div class="w-7 h-7 rounded-full bg-surface-container text-on-surface-variant flex items-center justify-center shrink-0">
+<span class="text-xs font-medium">04</span>
+</div>
+<div class="min-w-0">
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase truncate">Final</p>
+<p class="font-label-lg text-label-lg text-on-surface-variant truncate">Depósito &amp; Caução</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- ARTIST SUMMARY STRIP -->
+<div class="w-full mb-space-xl p-space-md rounded-xl bg-surface-container-low flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-md">
+<div class="relative w-14 h-14 rounded-lg overflow-hidden shrink-0 bg-surface-container-high">
+<img class="w-full h-full object-cover" data-alt="Intense close-up portrait of master tattoo artist Renan Costa with dark textured studio backdrop, chiaroscuro golden sidelight reflecting on fine ink instruments, deep blackwork aesthetic and focused gaze" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_ltSDtnnEo4Q8Lkyk8cITkgoTpkPwPuN735NIY4cMrukRnp1u_PbvxjVmReIBiMf3XoHWtpdsoGPp8dfaqCTt0x50EhZU1Sdhi0EwrVyeGcWMV87mn5FKstJmsrJH8wgFQyX6N141pT8QJtml1yxCnt1hmqF25F3dS4jmlHeDXMrygyLoF2iYQsLYNJqo92rqckqj7Rp7SKRPb8RI1O10EHrAnHM_x0qZCajAjrs"/>
+<span class="absolute bottom-1 right-1 w-2.5 h-2.5 rounded-full bg-tertiary"></span>
+</div>
+<div>
+<div class="flex items-center gap-space-xs flex-wrap">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Renan Costa</h2>
+<span class="font-label-caps text-label-caps uppercase px-1.5 py-0.5 rounded-DEFAULT bg-primary-container/20 text-primary">Bancada A-01</span>
+<span class="font-label-caps text-label-caps uppercase px-1.5 py-0.5 rounded-DEFAULT bg-surface-container text-on-surface-variant">São Paulo Atelier</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Geometria Sacra, Blackwork &amp; Dotwork Arquitetônico</p>
+</div>
+</div>
+<div class="flex items-center gap-space-md flex-wrap md:flex-nowrap w-full md:w-auto pt-space-xs md:pt-0">
+<div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container-high">
+<span class="material-symbols-outlined text-[16px] text-primary">accessibility_new</span>
+<div>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase">Área Corporal</p>
+<p class="font-label-lg text-label-lg text-on-surface">Antebraço Esquerdo</p>
+</div>
+</div>
+<div class="flex items-center gap-space-xs px-space-sm py-1.5 rounded-lg bg-surface-container-high">
+<span class="material-symbols-outlined text-[16px] text-secondary">straighten</span>
+<div>
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase">Escala Prevista</p>
+<p class="font-label-lg text-label-lg text-on-surface">~12 × 8 cm (Média)</p>
+</div>
+</div>
+<button class="font-label-md text-label-md text-primary hover:text-primary-fixed underline transition-colors self-center" type="button">
+          Alterar
+        </button>
+</div>
+</div>
+<!-- MAIN TWO-COLUMN WORKFLOW -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- LEFT & CENTER: FORMULÁRIO DE CONCEITO & MEMORIAL (8 COLUNAS) -->
+<div class="lg:col-span-8 space-y-space-xl">
+<!-- 1. MEMORIAL DESCRITIVO & INTENÇÃO POÉTICA -->
+<div class="p-space-lg md:p-space-xl rounded-xl bg-surface-container">
+<div class="flex items-start justify-between gap-space-sm mb-space-md">
+<div>
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">Diretriz Primária</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-0.5">Memorial Descritivo &amp; Intenção Poética</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                Expresse os elementos conceituais, arquétipos, memórias ou filosofias que devem fundamentar a construção anatômica desta peça.
+              </p>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[20px]">edit_note</span>
+</div>
+</div>
+<!-- Sugestões de Tags / Vocabulário do Artista -->
+<div class="mb-space-md">
+<p class="font-label-caps text-label-caps text-on-surface-variant uppercase mb-space-xs tracking-wider">
+              Vocabulário estilístico do artista (clique para acrescentar):
+            </p>
+<div class="flex flex-wrap gap-space-xs" id="tags-container">
+<button class="font-label-md text-label-md px-space-sm py-1 rounded-full bg-surface-container-high hover:bg-primary/20 hover:text-primary text-on-surface transition-colors flex items-center gap-1" onclick="appendTag('Geometria Sagrada')" type="button">
+<span>+</span> Geometria Sagrada
+              </button>
+<button class="font-label-md text-label-md px-space-sm py-1 rounded-full bg-surface-container-high hover:bg-primary/20 hover:text-primary text-on-surface transition-colors flex items-center gap-1" onclick="appendTag('Dotwork Fino')" type="button">
+<span>+</span> Dotwork Fino
+              </button>
+<button class="font-label-md text-label-md px-space-sm py-1 rounded-full bg-surface-container-high hover:bg-primary/20 hover:text-primary text-on-surface transition-colors flex items-center gap-1" onclick="appendTag('Padrão Fractal')" type="button">
+<span>+</span> Padrão Fractal
+              </button>
+<button class="font-label-md text-label-md px-space-sm py-1 rounded-full bg-surface-container-high hover:bg-primary/20 hover:text-primary text-on-surface transition-colors flex items-center gap-1" onclick="appendTag('Hachura Renascentista')" type="button">
+<span>+</span> Hachura Renascentista
+              </button>
+<button class="font-label-md text-label-md px-space-sm py-1 rounded-full bg-surface-container-high hover:bg-primary/20 hover:text-primary text-on-surface transition-colors flex items-center gap-1" onclick="appendTag('Metatron &amp; Proporção Áurea')" type="button">
+<span>+</span> Metatron &amp; Proporção Áurea
+              </button>
+</div>
+</div>
+<!-- Textarea com contador -->
+<div class="relative">
+<textarea class="w-full bg-surface-container-low text-on-surface p-space-md rounded-lg font-body-md text-body-md placeholder:text-outline/60 resize-y focus:outline-none focus:ring-1 focus:ring-primary shadow-inner" id="memorial-textarea" maxlength="1000" placeholder="Descreva a narrativa da sua peça. Exemplo: Busco uma interpretação do Cubo de Metatron em sobreposição a linhas orgânicas e fluídas que sigam a curvatura muscular externa do antebraço. Desejo pontilhismo microscópico de densidade decrescente..." rows="6">Busco uma peça que una o simbolismo da proporção áurea com linhas estruturais renascentistas. Quero um ponto focal sutil em Metatron com sombreamento em dotwork ultrarrefinado, respeitando o movimento da musculatura pronadora do antebraço esquerdo quando o braço estiver em repouso estendido.</textarea>
+<div class="flex items-center justify-between pt-space-xs">
+<span class="font-body-sm text-body-sm text-outline">Quanto mais rico o seu memorial, mais fiel será a sinergia na prancheta.</span>
+<span class="font-label-caps text-label-caps text-secondary font-mono" id="char-counter">386 / 1000</span>
+</div>
+</div>
+</div>
+<!-- 2. UPLOAD DE REFERÊNCIAS VISUAIS & ANATOMIA DA DERME -->
+<div class="p-space-lg md:p-space-xl rounded-xl bg-surface-container">
+<div class="flex items-start justify-between gap-space-sm mb-space-md">
+<div>
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">Estudos Anatômicos &amp; Atmosfera</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-0.5">Referências Visuais &amp; Topografia da Pele</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                Anexe registros nítidos do local de aplicação e referências artísticas que dialoguem com sua visão.
+              </p>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[20px]">add_photo_alternate</span>
+</div>
+</div>
+<!-- Diretrizes Fotográficas (Chips) -->
+<div class="flex flex-wrap gap-space-xs mb-space-md">
+<div class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-DEFAULT bg-surface-container-high font-label-caps text-label-caps text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-primary"></span>
+              Luz natural difusa (sem flash direto)
+            </div>
+<div class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-DEFAULT bg-surface-container-high font-label-caps text-label-caps text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary"></span>
+              Sem filtros ou edição de contraste
+            </div>
+<div class="inline-flex items-center gap-1.5 px-space-sm py-1 rounded-DEFAULT bg-surface-container-high font-label-caps text-label-caps text-on-surface-variant">
+<span class="w-1.5 h-1.5 rounded-full bg-tertiary"></span>
+              Indique pintas, cicatrizes ou relevos
+            </div>
+</div>
+<!-- Grid de Upload / Miniaturas -->
+<div class="grid grid-cols-2 sm:grid-cols-4 gap-space-md">
+<!-- Foto 1: Pele Real / Local Anatômico -->
+<div class="relative group rounded-lg overflow-hidden bg-surface-container-low aspect-[4/5] flex flex-col justify-end">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="High-resolution clinical photography of human forearm under natural soft studio lighting showing clear skin texture, subtle muscular contours and clean perspective ready for bespoke tattoo placement study" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB2dqKb8FVW2uuqA-Vb1ngygL1JSk5SBUSJawItTVD2K7GeJjUZEJVb_HNZ-313qNGMW-CgdB732uncFEnV7ZiH0XgO5XZeAexDirpmAxmPruqi3UCOAD82KGv5y64fhEtG9Yn2KjbLT63zs6XPKP8NDbwtd8E_UHIT4tnU5rCebcU_PV7VY5CsHR31glQb1ytLDRT3sncZ1x8QbsneexkYwzELOOezkZdavG5F6nw"/>
+<div class="relative z-10 p-2 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent">
+<span class="font-label-caps text-label-caps uppercase text-tertiary block">Foto da Derme</span>
+<p class="font-body-sm text-body-sm text-on-surface truncate">Antebraço_luz_natural.jpg</p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-caps text-label-caps text-outline">2.4 MB</span>
+<button class="text-error hover:text-error-container" title="Remover" type="button"><span class="material-symbols-outlined text-[16px]">delete</span></button>
+</div>
+</div>
+<span class="absolute top-2 left-2 z-10 font-label-caps text-label-caps px-1.5 py-0.5 rounded-DEFAULT bg-surface-container-lowest/90 text-on-surface">Slot 01</span>
+</div>
+<!-- Foto 2: Inspiração Artística Gravura -->
+<div class="relative group rounded-lg overflow-hidden bg-surface-container-low aspect-[4/5] flex flex-col justify-end">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Classical Renaissance architectural etching and intricate copperplate engraving of sacred geometric spheres and astronomical measurements in chiaroscuro monochrome ink" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDIp7cBKPEaF3b4Dp1AFBz7qVjo_SwY7YuE9oJuuSzNMRd_KsGNrwVwb-dLKehD-NaBHlOdbM_yLvEKrUeYtaB20lUBWFa4-qFPm_nUPSUGalmCVsPLZhFLIfvvCeKmP_ozQXtYtr9QDl9HLYaoulywEiGEPz7uECYoOMlYjtzQo_EwFLKZcu7dJo25FqugfBKoNe98VvskaKxlaitXL6-5b0bpm1iGDXbmZVEjb_Y"/>
+<div class="relative z-10 p-2 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent">
+<span class="font-label-caps text-label-caps uppercase text-secondary block">Inspiração Artística</span>
+<p class="font-body-sm text-body-sm text-on-surface truncate">Gravura_renascentista.png</p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-caps text-label-caps text-outline">4.1 MB</span>
+<button class="text-error hover:text-error-container" title="Remover" type="button"><span class="material-symbols-outlined text-[16px]">delete</span></button>
+</div>
+</div>
+<span class="absolute top-2 left-2 z-10 font-label-caps text-label-caps px-1.5 py-0.5 rounded-DEFAULT bg-surface-container-lowest/90 text-on-surface">Slot 02</span>
+</div>
+<!-- Foto 3: Inspiração 2 (Padrão Geométrico) -->
+<div class="relative group rounded-lg overflow-hidden bg-surface-container-low aspect-[4/5] flex flex-col justify-end">
+<img class="absolute inset-0 w-full h-full object-cover" data-alt="Macro detail of sacred geometry Metatron cube black ink tattoo on skin showing ultra fine stippling and sharp microscopic linework with smooth gradient transitions" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCNHF2eGaX7TRVGZLQyKKQ3rQKyqiDQI10DHteqrnfUe6M1ww-lbD-QxrFqjgVLL8hMOlpDeggLvPIir5Y7q9dfGYRyq3CHnCDDqeFezkrNRbLzZGapPAFMGR_vaIhUyd4Fh0Omad9vG4slMPAmbZ5Cr7UV13GiqNV9WiQ-gBCkfyW8DV3IweKzoTWvuOCbzVr6xEwKU2kAARDOM0iiLNcmxcEyFWQpoNV-GqJ74fU"/>
+<div class="relative z-10 p-2 bg-gradient-to-t from-surface-container-lowest via-surface-container-lowest/80 to-transparent">
+<span class="font-label-caps text-label-caps uppercase text-secondary block">Textura &amp; Densidade</span>
+<p class="font-body-sm text-body-sm text-on-surface truncate">Dotwork_densidade.jpg</p>
+<div class="flex items-center justify-between pt-1">
+<span class="font-label-caps text-label-caps text-outline">1.8 MB</span>
+<button class="text-error hover:text-error-container" title="Remover" type="button"><span class="material-symbols-outlined text-[16px]">delete</span></button>
+</div>
+</div>
+<span class="absolute top-2 left-2 z-10 font-label-caps text-label-caps px-1.5 py-0.5 rounded-DEFAULT bg-surface-container-lowest/90 text-on-surface">Slot 03</span>
+</div>
+<!-- Slot 4: Dropzone Ativo -->
+<label class="cursor-pointer rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-colors aspect-[4/5] flex flex-col items-center justify-center p-space-sm text-center group">
+<div class="w-10 h-10 rounded-full bg-surface-container group-hover:bg-primary/20 group-hover:text-primary text-on-surface-variant flex items-center justify-center transition-colors mb-space-xs">
+<span class="material-symbols-outlined text-[20px]">add</span>
+</div>
+<span class="font-label-lg text-label-lg text-on-surface group-hover:text-primary transition-colors">Adicionar Foto</span>
+<span class="font-label-caps text-label-caps text-outline mt-1 uppercase">Máx 4 arquivos</span>
+<span class="font-body-sm text-body-sm text-outline/80 mt-1">PNG, JPG até 25MB</span>
+<input accept="image/*" class="hidden" type="file"/>
+</label>
+</div>
+</div>
+<!-- 3. PREFERÊNCIAS TÉCNICAS E RESTRIÇÕES DE PELE -->
+<div class="p-space-lg md:p-space-xl rounded-xl bg-surface-container">
+<div class="flex items-start justify-between gap-space-sm mb-space-md">
+<div>
+<span class="font-label-caps text-label-caps text-secondary tracking-widest uppercase">Parâmetros Operacionais</span>
+<h3 class="font-headline-md text-headline-md text-on-surface mt-0.5">Preferências Técnicas &amp; Restrições da Pele</h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1">
+                Oriente as escolhas de pigmento, tonalidade e fatores dermatológicos para a sessão.
+              </p>
+</div>
+<div class="w-10 h-10 rounded-lg bg-surface-container-high flex items-center justify-center shrink-0">
+<span class="material-symbols-outlined text-primary text-[20px]">tune</span>
+</div>
+</div>
+<!-- Bloco A: Tipo de Contraste Desejado -->
+<div class="mb-space-lg">
+<label class="block font-label-caps text-label-caps uppercase text-on-surface-variant mb-space-xs">
+              Densidade &amp; Gradação de Pigmento
+            </label>
+<div class="grid grid-cols-1 sm:grid-cols-3 gap-space-sm" id="contrast-options">
+<button class="contrast-btn active text-left p-space-md rounded-lg bg-surface-container-high ring-1 ring-primary transition-all" type="button">
+<div class="flex items-center justify-between mb-1">
+<span class="font-headline-sm text-headline-sm text-primary">Alto Contraste</span>
+<span class="material-symbols-outlined text-primary text-[18px]">radio_button_checked</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pretos sólidos e profundos, com pontos brancos de respiro na derme.</p>
+</button>
+<button class="contrast-btn text-left p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-all" type="button">
+<div class="flex items-center justify-between mb-1">
+<span class="font-headline-sm text-headline-sm text-on-surface">Sombreado Suave</span>
+<span class="material-symbols-outlined text-outline text-[18px]">radio_button_unchecked</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Transições aéreas em greywash, pontilhismo difuso e vaporoso.</p>
+</button>
+<button class="contrast-btn text-left p-space-md rounded-lg bg-surface-container-low hover:bg-surface-container-high transition-all" type="button">
+<div class="flex items-center justify-between mb-1">
+<span class="font-headline-sm text-headline-sm text-on-surface">Linhas Puras</span>
+<span class="material-symbols-outlined text-outline text-[18px]">radio_button_unchecked</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Arquitetura estrita de traço sem preenchimento maciço.</p>
+</button>
+</div>
+</div>
+<!-- Bloco B: Condições Especiais & Cobertura -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-space-md pt-space-xs">
+<div class="p-space-md rounded-lg bg-surface-container-low flex items-start gap-space-md">
+<div class="pt-0.5">
+<input class="w-4 h-4 rounded text-primary bg-surface-container-high border-0 focus:ring-primary focus:ring-offset-0 accent-primary cursor-pointer" id="coverup-toggle" type="checkbox"/>
+</div>
+<div class="flex-1">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold cursor-pointer" for="coverup-toggle">
+                  Sobreposição ou Cobertura (Cover-up)
+                </label>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Existe tatuagem antiga ou pigmento residual no local exato do antebraço esquerdo?
+                </p>
+</div>
+</div>
+<div class="p-space-md rounded-lg bg-surface-container-low flex items-start gap-space-md">
+<div class="pt-0.5">
+<input checked="" class="w-4 h-4 rounded text-primary bg-surface-container-high border-0 focus:ring-primary focus:ring-offset-0 accent-primary cursor-pointer" id="scar-toggle" type="checkbox"/>
+</div>
+<div class="flex-1">
+<label class="font-label-lg text-label-lg text-on-surface font-semibold cursor-pointer" for="scar-toggle">
+                  Cicatriz, Queimadura ou Quelóide
+                </label>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">
+                  Pequena cicatriz linear na lateral externa (+2 anos cicatrizada). O tatuador integrará o fluxo.
+                </p>
+</div>
+</div>
+</div>
+<!-- Bloco C: Tolerância & Ritmo de Sessão -->
+<div class="mt-space-md p-space-md rounded-lg bg-surface-container-low flex flex-col sm:flex-row sm:items-center justify-between gap-space-md">
+<div>
+<p class="font-label-lg text-label-lg text-on-surface font-semibold">Tolerância a Sessões Contínuas</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Preferência de ritmo para o bloco de 4h estimadas.</p>
+</div>
+<div class="flex items-center gap-space-xs">
+<button class="px-space-md py-1.5 rounded-lg bg-surface-container-high text-on-surface hover:text-primary font-label-md text-label-md transition-colors" type="button">
+                Ritmo Clássico (Pausas a cada 1h30)
+              </button>
+<button class="px-space-md py-1.5 rounded-lg bg-primary-container/20 text-primary font-label-md text-label-md font-semibold" type="button">
+                Imersão Focada (Pausa única)
+              </button>
+</div>
+</div>
+</div>
+</div>
+<!-- RIGHT: RESUMO FLUTUANTE (FICHA CURATORIAL) (4 COLUNAS) -->
+<aside class="lg:col-span-4 space-y-space-md lg:sticky lg:top-24">
+<!-- CARD DA FICHA CURATORIAL -->
+<div class="p-space-lg rounded-xl bg-surface-container-low shadow-[0_24px_48px_-12px_rgba(0,0,0,0.75)] relative overflow-hidden">
+<!-- Elemento decorativo dourado no canto superior -->
+<div class="absolute -top-12 -right-12 w-28 h-28 rounded-full bg-primary/10 blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between pb-space-md">
+<div>
+<span class="font-label-caps text-label-caps text-secondary uppercase tracking-widest block">Ficha Curatorial</span>
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Resumo da Proposta</h4>
+</div>
+<span class="w-2.5 h-2.5 rounded-full bg-primary animate-pulse"></span>
+</div>
+<div class="space-y-space-sm pt-space-xs font-body-sm text-body-sm">
+<div class="flex justify-between items-center py-1.5">
+<span class="text-on-surface-variant">Artista Atribuído</span>
+<span class="text-on-surface font-semibold">Renan Costa</span>
+</div>
+<div class="flex justify-between items-center py-1.5">
+<span class="text-on-surface-variant">Posicionamento</span>
+<span class="text-on-surface text-right">Antebraço Esquerdo <br/><span class="text-xs text-tertiary">Sensibilidade Baixa</span></span>
+</div>
+<div class="flex justify-between items-center py-1.5">
+<span class="text-on-surface-variant">Dimensões Projetadas</span>
+<span class="text-on-surface">~12 × 8 cm</span>
+</div>
+<div class="flex justify-between items-center py-1.5">
+<span class="text-on-surface-variant">Estilo Base</span>
+<span class="text-on-surface">Geometria Sacra &amp; Dot</span>
+</div>
+<div class="flex justify-between items-center py-1.5">
+<span class="text-on-surface-variant">Anexos Carregados</span>
+<span class="text-primary font-semibold">3 Referências</span>
+</div>
+</div>
+<!-- Estimativa Financeira -->
+<div class="my-space-md p-space-md rounded-lg bg-surface-container space-y-space-xs">
+<div class="flex justify-between items-baseline">
+<span class="font-label-caps text-label-caps text-on-surface-variant uppercase">Estimativa da Obra</span>
+<span class="font-headline-sm text-headline-sm text-primary">R$ 2.400 – R$ 2.800</span>
+</div>
+<p class="font-body-sm text-body-sm text-outline">Inclui estudo conceitual exclusivo e sessão completa.</p>
+<div class="pt-space-xs flex justify-between items-center">
+<span class="font-label-caps text-label-caps text-secondary uppercase">Sinal Caução Previsto</span>
+<span class="font-label-lg text-label-lg text-on-surface font-bold">R$ 400,00</span>
+</div>
+</div>
+<!-- Indicador de Análise Curatorial -->
+<div class="p-space-sm rounded-lg bg-surface-container-high flex items-center gap-space-sm mb-space-lg">
+<span class="material-symbols-outlined text-secondary text-[20px]">hourglass_top</span>
+<div class="min-w-0">
+<p class="font-label-caps text-label-caps text-secondary uppercase">Tempo Médio de Análise</p>
+<p class="font-body-sm text-body-sm text-on-surface">Aprovação conceitual de 4h a 12h</p>
+</div>
+</div>
+<!-- AÇÕES DO STEPPER -->
+<div class="space-y-space-sm">
+<a class="w-full py-space-md px-space-lg rounded-lg bg-primary hover:bg-primary-fixed text-on-primary font-label-lg text-label-lg font-semibold flex items-center justify-center gap-space-sm shadow-[0_0_24px_-4px_rgba(212,175,55,0.3)] transition-all" href="#">
+<span>Avançar para Data &amp; Janela</span>
+<span class="material-symbols-outlined text-[18px]">arrow_forward</span>
+</a>
+<button class="w-full py-space-sm px-space-md rounded-lg bg-transparent hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors flex items-center justify-center gap-space-xs" type="button">
+<span class="material-symbols-outlined text-[18px]">arrow_back</span>
+<span>Retornar para Artista &amp; Escala</span>
+</button>
+</div>
+<!-- SUPORTE COM O CONCIERGE -->
+<div class="mt-space-lg pt-space-md flex items-center justify-between">
+<div class="flex items-center gap-space-xs">
+<div class="w-2 h-2 rounded-full bg-tertiary"></div>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Concierge Online</span>
+</div>
+<a class="font-label-caps text-label-caps text-secondary hover:text-primary uppercase tracking-wider flex items-center gap-1 transition-colors" href="#">
+<span>Falar no WhatsApp</span>
+<span class="material-symbols-outlined text-[14px]">open_in_new</span>
+</a>
+</div>
+</div>
+<!-- NOTA DE SALVAMENTO AUTOMÁTICO -->
+<div class="px-space-sm flex items-center gap-space-xs text-on-surface-variant/70 font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px] text-tertiary">cloud_done</span>
+<span>Rascunho salvo automaticamente às 14:38</span>
+</div>
+</aside>
+</div>
+</div>
+<!-- SCRIPT PARA INTERAÇÃO MICRO DO CONTADOR E TAGS -->
+<script>
+    const textarea = document.getElementById('memorial-textarea');
+    const counter = document.getElementById('char-counter');
+
+    if (textarea && counter) {
+      const updateCount = () => {
+        const len = textarea.value.length;
+        counter.textContent = `${len} / 1000`;
+      };
+      textarea.addEventListener('input', updateCount);
+      updateCount();
+    }
+
+    function appendTag(tagName) {
+      if (!textarea) return;
+      const separator = textarea.value.trim().length > 0 ? ' • ' : '';
+      textarea.value = textarea.value.trim() + separator + tagName;
+      textarea.dispatchEvent(new Event('input'));
+      textarea.focus();
+    }
+  </script>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/30"><div class="w-full px-gutter md:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-xl"><div class="space-y-space-sm"><div class="flex items-center gap-space-sm"><img alt="InkCraft Studio Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf_dQRvL-EWcqhqiDd0Ur0kw5Fr2SYXkTGY8TFf1skxUfYpWtfXTVIZhQ_GX4vLKBcQnqaEtDrYrrHBjGVGg4GDZT0ni6SHT0grZSMK-IJq0S3clCCtV4hIbCIYZo6g49bvQGYYgvVazJxyvfMfEw42tzOTh75lW_DvWPyX200GMrWiFvHOOXmkJAGmRaADG87xeqOpEQC6qTMX41UICXwlQyCeWg7NqZypZX40TI"/><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface">INKCRAFT</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">Ateliê exclusivo de alta tatuagem e expressão artística bespoke. Rigor anatômico, técnica refinada e atmosfera de contemplação.</p><div class="pt-space-xs flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Estúdio Operando em São Paulo &amp; Curitiba</span></div></div><div class="space-y-space-sm"><h3 class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">O Estúdio</h3><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li>Alameda dos Alfarrábios, 1280 - Jardins</li><li>São Paulo - SP, Brasil</li><li class="pt-space-xs text-on-surface">contato@inkcraft.art</li><li>+55 (11) 3088-4921</li></ul></div><div class="space-y-space-sm"><h3 class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Horários de Atendimento</h3><div class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><p class="flex justify-between max-w-xs"><span>Terça a Sexta</span><span class="text-on-surface">11h — 20h</span></p><p class="flex justify-between max-w-xs"><span>Sábado</span><span class="text-on-surface">10h — 19h</span></p><p class="flex justify-between max-w-xs"><span>Domingo &amp; Segunda</span><span class="text-outline">Exclusivo para Convidados</span></p></div></div><div class="space-y-space-sm"><h3 class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Conectar</h3><p class="font-body-sm text-body-sm text-on-surface-variant">Acompanhe exposições inéditas, aberturas de agenda e drops de flash art.</p><div class="flex items-center gap-space-sm pt-space-xs"><a aria-label="Instagram" class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">camera</span></a><a aria-label="Portfólio Digital" class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">palette</span></a><a aria-label="Localização" class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">location_on</span></a></div></div></div><div class="pt-space-lg border-t border-outline-variant/20 flex flex-col sm:flex-row items-center justify-between gap-space-md text-on-surface-variant font-label-md text-label-md"><p>© 2025 INKCRAFT Atelier de Tatuagem. Todos os direitos reservados.</p><div class="flex items-center gap-space-md"><a class="hover:text-on-surface transition-colors" href="#">Privacidade</a><a class="hover:text-on-surface transition-colors" href="#">Termos &amp; Consentimento</a><a class="hover:text-on-surface transition-colors" href="#">Biossegurança</a></div></div></div></footer></body></html>

@@ -1,0 +1,689 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="pt-BR"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700&amp;family=Syne:wght@600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"on-primary-container":"#554300","secondary":"#e2c471","on-error":"#690005","surface-container-high":"#2a292e","on-tertiary-fixed":"#002113","error-container":"#93000a","inverse-primary":"#735c00","surface-container-low":"#1b1b1f","on-secondary-fixed":"#241a00","tertiary":"#58e7aa","on-secondary-container":"#dabc6b","on-surface-variant":"#d0c5af","inverse-on-surface":"#303034","surface":"#131317","on-tertiary-fixed-variant":"#005236","surface-container-highest":"#353439","surface-tint":"#e9c349","on-secondary-fixed-variant":"#584400","on-surface":"#e4e1e7","surface-dim":"#131317","tertiary-container":"#33ca90","primary-container":"#d4af37","tertiary-fixed-dim":"#4edea3","on-background":"#e4e1e7","primary-fixed":"#ffe088","surface-container":"#1f1f23","tertiary-fixed":"#6ffbbe","surface-container-lowest":"#0e0e12","background":"#131317","surface-bright":"#39393d","on-secondary":"#3d2f00","on-primary-fixed":"#241a00","error":"#ffb4ab","on-primary":"#3c2f00","inverse-surface":"#e4e1e7","primary":"#f2ca50","on-error-container":"#ffdad6","secondary-container":"#604b00","on-tertiary":"#003824","primary-fixed-dim":"#e9c349","outline-variant":"#4d4635","secondary-fixed":"#ffe08b","surface-variant":"#353439","secondary-fixed-dim":"#e2c471","on-tertiary-container":"#005035","outline":"#99907c","on-primary-fixed-variant":"#574500"},borderRadius:{"DEFAULT":"0.125rem","lg":"0.25rem","xl":"0.5rem","full":"0.75rem"},spacing:{"gutter":"1.5rem","gutter-mobile":"1rem","space-lg":"1.5rem","margin-mobile":"1.25rem","space-sm":"0.5rem","space-md":"1rem","margin":"3rem","space-xs":"0.25rem","space-xl":"2.5rem"},fontFamily:{"headline-md":["Syne"],"headline-lg-mobile":["Syne"],"headline-sm":["Syne"],"label-md":["Plus Jakarta Sans"],"body-md":["Plus Jakarta Sans"],"body-lg":["Plus Jakarta Sans"],"display-hero-mobile":["Syne"],"label-caps":["Plus Jakarta Sans"],"label-lg":["Plus Jakarta Sans"],"display-hero":["Syne"],"body-sm":["Plus Jakarta Sans"],"headline-lg":["Syne"]},fontSize:{"headline-md":["24px",{lineHeight:"32px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-lg-mobile":["28px",{lineHeight:"36px",letterSpacing:"-0.01em",fontWeight:"600"}],"headline-sm":["20px",{lineHeight:"28px",letterSpacing:"0em",fontWeight:"600"}],"label-md":["12px",{lineHeight:"16px",letterSpacing:"0.04em",fontWeight:"600"}],"body-md":["15px",{lineHeight:"24px",letterSpacing:"0.01em",fontWeight:"400"}],"body-lg":["18px",{lineHeight:"28px",letterSpacing:"0em",fontWeight:"400"}],"display-hero-mobile":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"700"}],"label-caps":["11px",{lineHeight:"16px",letterSpacing:"0.12em",fontWeight:"700"}],"label-lg":["14px",{lineHeight:"20px",letterSpacing:"0.02em",fontWeight:"600"}],"display-hero":["56px",{lineHeight:"64px",letterSpacing:"-0.03em",fontWeight:"700"}],"body-sm":["13px",{lineHeight:"20px",letterSpacing:"0.01em",fontWeight:"400"}],"headline-lg":["36px",{lineHeight:"44px",letterSpacing:"-0.02em",fontWeight:"600"}]}}}};</script></head><body class="bg-background font-body-md text-on-surface antialiased min-h-screen selection:bg-primary selection:text-on-primary"><header class="fixed top-0 left-0 right-0 z-50 bg-surface/85 backdrop-blur-xl border-b border-outline-variant/30 shadow-[0_4px_24px_rgba(0,0,0,0.6)]"><div class="h-20 w-full px-gutter md:px-margin flex items-center justify-between gap-space-md"><div class="flex items-center gap-space-sm"><img alt="InkCraft Studio Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf_dQRvL-EWcqhqiDd0Ur0kw5Fr2SYXkTGY8TFf1skxUfYpWtfXTVIZhQ_GX4vLKBcQnqaEtDrYrrHBjGVGg4GDZT0ni6SHT0grZSMK-IJq0S3clCCtV4hIbCIYZo6g49bvQGYYgvVazJxyvfMfEw42tzOTh75lW_DvWPyX200GMrWiFvHOOXmkJAGmRaADG87xeqOpEQC6qTMX41UICXwlQyCeWg7NqZypZX40TI"/><a class="font-headline-sm text-headline-sm tracking-tight text-on-surface hover:text-primary transition-colors" data-path="portfolio" href="#">INKCRAFT</a><span class="hidden lg:inline-block font-label-caps text-label-caps uppercase px-space-xs py-0.5 rounded-DEFAULT bg-surface-container-high text-secondary border border-outline-variant/40 ml-space-xs">Atelier</span></div><nav class="hidden md:flex items-center gap-space-lg" data-active-classes="text-primary font-bold border-b-2 border-primary"><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface py-space-xs transition-colors" data-path="portfolio" href="#">Portfólio</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface py-space-xs transition-colors" data-path="tatuadores" href="#">Tatuadores</a><a class="font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface py-space-xs transition-colors" data-path="o-estudio" href="#">O Estúdio</a></nav><div class="flex items-center gap-space-sm md:gap-space-md"><a class="font-label-lg text-label-lg text-on-surface hover:text-primary transition-colors px-space-sm py-space-xs" data-path="entrar" href="#">Entrar</a><a class="hidden sm:inline-flex items-center justify-center font-label-lg text-label-lg text-on-primary bg-primary hover:bg-primary-fixed hover:text-on-primary-fixed px-space-md py-space-sm rounded-lg shadow-[0_0_24px_-4px_rgba(212,175,55,0.25)] transition-all font-semibold" data-path="agendar-sessao" href="#">Agendar Sessão</a><div class="w-8 h-8 rounded-full bg-primary flex items-center justify-center shrink-0"><span class="material-symbols-outlined text-on-primary text-[18px]">person</span></div></div></div></header><main class="w-full pt-20 bg-background"><div class="flex flex-col w-full">
+<!-- Interactive Client-side Script for Tabs & Filters -->
+<script>
+    function switchMainTab(tabIndex) {
+      const tab1Btn = document.getElementById('tab-btn-upcoming');
+      const tab2Btn = document.getElementById('tab-btn-history');
+      const upcomingGroup = document.querySelectorAll('.group-upcoming');
+      const historyGroup = document.querySelectorAll('.group-history');
+
+      if (tabIndex === 1) {
+        tab1Btn.className = "flex items-center gap-space-xs pb-space-sm font-label-lg text-label-lg text-primary border-b-2 border-primary transition-all cursor-pointer";
+        tab2Btn.className = "flex items-center gap-space-xs pb-space-sm font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-all cursor-pointer";
+        upcomingGroup.forEach(el => el.classList.remove('hidden'));
+        historyGroup.forEach(el => el.classList.add('hidden'));
+      } else {
+        tab2Btn.className = "flex items-center gap-space-xs pb-space-sm font-label-lg text-label-lg text-primary border-b-2 border-primary transition-all cursor-pointer";
+        tab1Btn.className = "flex items-center gap-space-xs pb-space-sm font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-all cursor-pointer";
+        upcomingGroup.forEach(el => el.classList.add('hidden'));
+        historyGroup.forEach(el => el.classList.remove('hidden'));
+      }
+    }
+
+    function filterByStatus(status) {
+      const cards = document.querySelectorAll('.booking-card');
+      const filterChips = document.querySelectorAll('.filter-chip');
+      
+      filterChips.forEach(chip => {
+        if (chip.getAttribute('data-status') === status) {
+          chip.className = "filter-chip px-space-md py-1.5 rounded-full font-label-caps text-label-caps uppercase tracking-wider bg-primary text-on-primary transition-all";
+        } else {
+          chip.className = "filter-chip px-space-md py-1.5 rounded-full font-label-caps text-label-caps uppercase tracking-wider bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all";
+        }
+      });
+
+      cards.forEach(card => {
+        if (status === 'all') {
+          card.classList.remove('hidden');
+        } else {
+          if (card.getAttribute('data-status-type') === status) {
+            card.classList.remove('hidden');
+          } else {
+            card.classList.add('hidden');
+          }
+        }
+      });
+    }
+
+    function toggleCancelModal(show) {
+      const modal = document.getElementById('cancel-modal');
+      if (show) {
+        modal.classList.remove('hidden');
+      } else {
+        modal.classList.add('hidden');
+      }
+    }
+  </script>
+<!-- Main Section Framework -->
+<section class="w-full px-gutter md:px-margin py-space-xl">
+<div class="max-w-[1440px] mx-auto flex flex-col gap-space-xl">
+<!-- Breadcrumbs & Editorial Header -->
+<div class="flex flex-col gap-space-sm border-b border-outline-variant/20 pb-space-lg">
+<nav aria-label="Navegação Hierárquica" class="flex items-center gap-space-xs text-on-surface-variant">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-outline">Cliente</span>
+<span class="text-outline-variant text-[10px]">/</span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-outline">Painel de Controle</span>
+<span class="text-outline-variant text-[10px]">/</span>
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-bold">Meus Agendamentos</span>
+</nav>
+<div class="flex flex-col lg:flex-row lg:items-end justify-between gap-space-md pt-space-xs">
+<div class="space-y-space-xs max-w-3xl">
+<h1 class="font-headline-lg text-headline-lg text-on-surface tracking-tight">
+              Meus Agendamentos &amp; Sessões
+            </h1>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl leading-relaxed">
+              Acompanhe o status curatorial de suas peças, cronograma de bancada, recomendações pré e pós-agulha e comprovantes de caução autenticados pelo ateliê.
+            </p>
+</div>
+<div class="flex items-center gap-space-sm shrink-0">
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg transition-all border border-outline-variant/30" href="#">
+<span class="material-symbols-outlined text-[18px] text-secondary">support_agent</span>
+<span>Concierge InkCraft</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-sm rounded-lg bg-primary hover:bg-primary-fixed text-on-primary font-label-lg text-label-lg font-semibold shadow-[0_0_24px_-4px_rgba(212,175,55,0.3)] transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]">add</span>
+<span>Nova Solicitação</span>
+</a>
+</div>
+</div>
+</div>
+<!-- Quick Summary KPI Grid (4 Cards) -->
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-space-md">
+<!-- KPI 1 -->
+<div class="p-space-md rounded-xl bg-surface-container-low border border-outline-variant/20 flex flex-col justify-between hover:border-secondary/30 transition-all group">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-outline">Total de Obras</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-secondary group-hover:bg-primary/10 transition-colors">
+<span class="material-symbols-outlined text-[18px]">palette</span>
+</div>
+</div>
+<div class="mt-space-md">
+<span class="font-headline-lg text-headline-lg text-on-surface">04</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Comissões registradas no atelier</p>
+</div>
+</div>
+<!-- KPI 2 -->
+<div class="p-space-md rounded-xl bg-surface-container-low border border-outline-variant/20 flex flex-col justify-between hover:border-secondary/30 transition-all group relative overflow-hidden">
+<div class="absolute -right-6 -bottom-6 w-24 h-24 bg-primary/5 rounded-full blur-xl pointer-events-none"></div>
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-bold">Próxima Sessão</span>
+<div class="w-8 h-8 rounded-lg bg-primary/10 flex items-center justify-center text-primary group-hover:bg-primary/20 transition-colors">
+<span class="material-symbols-outlined text-[18px]">event_upcoming</span>
+</div>
+</div>
+<div class="mt-space-md">
+<span class="font-headline-sm text-headline-sm text-on-surface block leading-tight">24 Outubro, 2025</span>
+<p class="font-body-sm text-body-sm text-secondary mt-0.5">14:30 • Renan Costa (Geometria)</p>
+</div>
+</div>
+<!-- KPI 3 -->
+<div class="p-space-md rounded-xl bg-surface-container-low border border-outline-variant/20 flex flex-col justify-between hover:border-secondary/30 transition-all group">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-outline">Saldo em Caução</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-tertiary group-hover:bg-tertiary/10 transition-colors">
+<span class="material-symbols-outlined text-[18px]">verified</span>
+</div>
+</div>
+<div class="mt-space-md">
+<span class="font-headline-lg text-headline-lg text-on-surface">R$ 400,00</span>
+<p class="font-body-sm text-body-sm text-tertiary mt-0.5">Garantia de bancada ativa (1 vaga)</p>
+</div>
+</div>
+<!-- KPI 4 -->
+<div class="p-space-md rounded-xl bg-surface-container-low border border-outline-variant/20 flex flex-col justify-between hover:border-secondary/30 transition-all group">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-outline">Cicatrização</span>
+<div class="w-8 h-8 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant group-hover:bg-surface-container-high transition-colors">
+<span class="material-symbols-outlined text-[18px]">healing</span>
+</div>
+</div>
+<div class="mt-space-md">
+<span class="font-headline-lg text-headline-lg text-on-surface">01 Obra</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant mt-0.5">Acompanhamento pós-procedimento</p>
+</div>
+</div>
+</div>
+<!-- Navigation Tabs & Subfilters -->
+<div class="flex flex-col gap-space-md">
+<!-- Main Top Tabs -->
+<div class="flex items-center gap-space-lg border-b border-outline-variant/30 overflow-x-auto">
+<button class="flex items-center gap-space-xs pb-space-sm font-label-lg text-label-lg text-primary border-b-2 border-primary transition-all cursor-pointer whitespace-nowrap" id="tab-btn-upcoming" onclick="switchMainTab(1)">
+<span>Próximos Atendimentos &amp; Em Análise</span>
+<span class="px-2 py-0.5 rounded-full bg-primary/20 text-primary font-label-caps text-[10px]">2</span>
+</button>
+<button class="flex items-center gap-space-xs pb-space-sm font-label-lg text-label-lg text-on-surface-variant hover:text-on-surface transition-all cursor-pointer whitespace-nowrap" id="tab-btn-history" onclick="switchMainTab(2)">
+<span>Histórico &amp; Obras Concluídas</span>
+<span class="px-2 py-0.5 rounded-full bg-surface-container-high text-on-surface-variant font-label-caps text-[10px]">2</span>
+</button>
+</div>
+<!-- Secondary Filter Chips -->
+<div class="flex flex-wrap items-center gap-space-xs pt-space-xs">
+<button class="filter-chip px-space-md py-1.5 rounded-full font-label-caps text-label-caps uppercase tracking-wider bg-primary text-on-primary transition-all" data-status="all" onclick="filterByStatus('all')">
+            Todos
+          </button>
+<button class="filter-chip px-space-md py-1.5 rounded-full font-label-caps text-label-caps uppercase tracking-wider bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-status="confirmed" onclick="filterByStatus('confirmed')">
+            Confirmados (1)
+          </button>
+<button class="filter-chip px-space-md py-1.5 rounded-full font-label-caps text-label-caps uppercase tracking-wider bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-status="pending" onclick="filterByStatus('pending')">
+            Em Curadoria (1)
+          </button>
+<button class="filter-chip px-space-md py-1.5 rounded-full font-label-caps text-label-caps uppercase tracking-wider bg-surface-container text-on-surface-variant hover:text-on-surface hover:bg-surface-container-high transition-all" data-status="finished" onclick="filterByStatus('finished')">
+            Concluídos (1)
+          </button>
+</div>
+</div>
+<!-- Main Layout Grid: Content Deck (Col 8) + Studio Collector Companion (Col 4) -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-start">
+<!-- Left Deck: Appointments & Sessions Cards (8 Cols) -->
+<div class="lg:col-span-8 flex flex-col gap-space-lg">
+<!-- CARD 1: CONFIRMED (Next Immediate Session) -->
+<article class="booking-card group-upcoming relative bg-surface-container-low rounded-xl border border-secondary/40 shadow-[0_0_24px_-4px_rgba(212,175,55,0.14)] overflow-hidden transition-all duration-300" data-status-type="confirmed">
+<!-- Left Accent Status Indicator Stripe -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-tertiary"></div>
+<div class="p-space-lg flex flex-col gap-space-md">
+<!-- Top Row: ID, Badges, Session Category -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pl-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-outline">Ref. #INK-8842</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary">Sessão Exclusiva Autoral</span>
+</div>
+<!-- RFC Semantic Badge: CONFIRMED -->
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#10b981]/10 border border-[#10b981]/30 text-[#34d399] font-label-caps text-label-caps uppercase tracking-wider">
+<span class="w-1.5 h-1.5 rounded-full bg-[#34d399] animate-pulse"></span>
+<span>Confirmado &amp; Agendado</span>
+</div>
+</div>
+<!-- Artist & Scheduled Time Header -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pt-space-xs border-b border-outline-variant/20 pb-space-md">
+<div class="flex items-center gap-space-md">
+<div class="relative w-14 h-14 rounded-full overflow-hidden border border-secondary/40 shrink-0">
+<img class="w-full h-full object-cover" data-alt="Close-up portrait of master tattoo artist Renan Costa with dark hair, focused gaze, wearing a minimalist black apron in a low-key illuminated tattoo atelier studio with warm champagne gold lighting and charcoal aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD7pnV5Bd1iwHiHvUFCq_0FZlljjiFKIfIJYLzO3fIOHF86FGGEM5D5Mr5RY8bJO-1wbrrQAWfwa4B6C_1bZRPSdi20tL9ypfNhef4LZMxIEo6R2qN9kP1A53P7TbpoYaUKnBl6bpaCs54QvPprCVhTsfdW9aZ-_Ft_D_KawyNi0z8v3CGSZYjY_LWwEPNu_719_yCk2D0yKFjx21EfZmNWMeDaG-ht8TyDkrdV8cM"/>
+</div>
+<div>
+<div class="flex items-center gap-space-xs">
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Renan Costa</h2>
+<span class="material-symbols-outlined text-[16px] text-primary" title="Residente Verificado">verified</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Residente Titular • Geometria Sacra &amp; Blackwork Fino</p>
+<span class="inline-block mt-0.5 font-label-caps text-[10px] uppercase text-outline px-1.5 py-0.5 rounded bg-surface-container">Bancada Cirúrgica A-01</span>
+</div>
+</div>
+<div class="sm:text-right bg-surface-container/60 sm:bg-transparent p-space-sm sm:p-0 rounded-lg">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-outline block">Data &amp; Janela de Agulha</span>
+<p class="font-headline-sm text-headline-sm text-secondary leading-tight mt-0.5">Sexta, 24 Out 2025</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">14:30 BRT • Duração Est. 4h30 (Sessão Única)</p>
+</div>
+</div>
+<!-- Artwork Specifications & Anatomy -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md pt-space-xs">
+<div class="md:col-span-2 space-y-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-outline">Composição Artística Solicitada</span>
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold">
+                    "Busto Clássico com Matriz de Metatron e Hachuras Renascentistas"
+                  </h3>
+<div class="flex flex-wrap items-center gap-y-1 gap-x-3 pt-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">accessibility_new</span>
+<span>Antebraço Esquerdo (Face Interna)</span>
+</span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">straighten</span>
+<span>Dimensão: 12 × 8 cm (Média)</span>
+</span>
+</div>
+</div>
+<!-- Reference & Placement Thumbnails -->
+<div class="space-y-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-outline">Anexos de Projeto</span>
+<div class="flex items-center gap-space-xs">
+<div class="relative w-16 h-16 rounded-lg overflow-hidden border border-outline-variant/30 group/thumb cursor-pointer bg-surface-container">
+<img class="w-full h-full object-cover group-hover/thumb:scale-110 transition-transform duration-300" data-alt="Anatomical photo of an inner left forearm photographed against dark charcoal backdrop, showing clean toned skin ready for tattoo placement with subtle studio rim light." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKNC4GTMWGPutS_D_qXb-a1sarGB9Ax5GO7yGwNjKKQx4FIZdLGsGfjAUKpgX5q_JTBSkZ8Bxw-kvLLfHDxkNB_k_qFRkE9Us4GvQN-lKYAGKybt9I-M2xktLSoylluZpVfn8qfDaduSwnzm9MhGZ-Ke1B1yA2M07OSGoQz-uBd-60vfMT9b5DFjZEn4EieT1yZUcyxlmSy-TdlJ1nBEFr-eEhtksA4JjnUXHct6s"/>
+<span class="absolute bottom-1 right-1 font-label-caps text-[9px] uppercase px-1 bg-surface-container-lowest/80 text-on-surface rounded">Local</span>
+</div>
+<div class="relative w-16 h-16 rounded-lg overflow-hidden border border-outline-variant/30 group/thumb cursor-pointer bg-surface-container">
+<img class="w-full h-full object-cover group-hover/thumb:scale-110 transition-transform duration-300" data-alt="Intricate black and grey renaissance engraving illustration of Metatron sacred geometric cube merged with classical sculpted bust chiaroscuro sketch on textured archival paper." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCojoOC5cGrbGYoclL-5bLkE4sYkWJRmLtA_egy1mJFBkv865jNQQvnH40xJqelF6Iog58Q0EQ5uua3wC3zb3GWxr2NsotJzOad-zJgEDu6za7SYZ7zyC4XCiV84VQ5Ri7XzwpIl9UxpZ2zXyGO1n8wWPWfYKqW07PilreAPF9AFy0cAVvxrnBcnnKoVVPFsiQcHqU4eCr0dsAt4q-44QNw9D4OSHv8mEx5GSFAnBI"/>
+<span class="absolute bottom-1 right-1 font-label-caps text-[9px] uppercase px-1 bg-surface-container-lowest/80 text-on-surface rounded">Arte</span>
+</div>
+<div class="w-16 h-16 rounded-lg border border-dashed border-outline-variant/40 flex flex-col items-center justify-center text-outline hover:text-on-surface transition-colors cursor-pointer bg-surface-container/30">
+<span class="material-symbols-outlined text-[18px]">add_photo_alternate</span>
+<span class="font-label-caps text-[9px] uppercase">Novo</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Financial Box (Caução & Totais) -->
+<div class="p-space-md rounded-lg bg-surface-container border border-outline-variant/20 flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="space-y-0.5">
+<div class="flex items-center gap-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-outline">Estimativa Orçamentária</span>
+<span class="font-headline-sm text-headline-sm text-on-surface">R$ 2.400,00 — R$ 2.800,00</span>
+</div>
+<div class="flex items-center gap-space-xs text-tertiary font-body-sm text-body-sm">
+<span class="material-symbols-outlined text-[16px]">check_circle</span>
+<span>Sinal Caução Liquidado: R$ 400,00 (Abatimento garantido na conclusão da bancada)</span>
+</div>
+</div>
+<a class="inline-flex items-center gap-space-xs text-secondary hover:text-primary font-label-lg text-label-lg underline underline-offset-4 transition-colors" href="#">
+<span class="material-symbols-outlined text-[16px]">receipt_long</span>
+<span>Ver Recibo Digital #REC-8842</span>
+</a>
+</div>
+<!-- Pre-session Clinical Instructions Banner -->
+<div class="p-space-md rounded-lg bg-surface-container-highest/40 border border-secondary/20 flex items-start gap-space-md">
+<span class="material-symbols-outlined text-secondary shrink-0 text-[20px] mt-0.5">info</span>
+<div class="text-on-surface-variant font-body-sm text-body-sm space-y-0.5">
+<strong class="text-on-surface font-semibold block">Protocolo de Higienização Pré-Bancada:</strong>
+<p>Mantenha hidratação da derme recomendada 48h antes da agulha. Não ingerir bebidas alcoólicas na véspera e alimentar-se com refeição reforçada 1h antes do procedimento.</p>
+</div>
+</div>
+<!-- Action Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-xs border-t border-outline-variant/20">
+<div class="flex flex-wrap items-center gap-space-sm">
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-primary hover:bg-primary-fixed text-on-primary font-label-lg text-label-lg font-semibold shadow-[0_0_16px_rgba(212,175,55,0.2)] transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]">chat</span>
+<span>Falar com o Tatuador (Renan Costa)</span>
+</a>
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg transition-colors border border-outline-variant/30" href="#">
+<span class="material-symbols-outlined text-[18px]">assignment</span>
+<span>Instruções &amp; Ficha Pré-Agulha</span>
+</a>
+</div>
+<button class="inline-flex items-center gap-space-xs text-outline hover:text-error transition-colors font-label-md text-label-md py-space-xs cursor-pointer" onclick="toggleCancelModal(true)">
+<span class="material-symbols-outlined text-[16px]">event_busy</span>
+<span>Reagendar ou Cancelar Sessão</span>
+</button>
+</div>
+</div>
+</article>
+<!-- CARD 2: PENDING (Curatorial Review by Maya Lin) -->
+<article class="booking-card group-upcoming relative bg-surface-container-low rounded-xl border border-outline-variant/20 overflow-hidden hover:border-outline-variant/50 transition-all duration-300" data-status-type="pending">
+<!-- Left Accent Status Stripe -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-[#eab308]"></div>
+<div class="p-space-lg flex flex-col gap-space-md">
+<!-- Top Row: Ref & PENDING status badge -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pl-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-outline">Ref. #INK-9104</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-on-surface-variant">Comissão Autoral em Triagem</span>
+</div>
+<!-- RFC Semantic Badge: PENDING -->
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#eab308]/10 border border-[#eab308]/30 text-[#facc15] font-label-caps text-label-caps uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">hourglass_top</span>
+<span>Em Curadoria Artística</span>
+</div>
+</div>
+<!-- Artist & Requested Slot -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pt-space-xs border-b border-outline-variant/20 pb-space-md">
+<div class="flex items-center gap-space-md">
+<div class="relative w-14 h-14 rounded-full overflow-hidden border border-outline-variant/40 shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of contemporary female tattoo artist Maya Lin in a dimly lit dark studio with brushed gold lighting accents, focused expression with dark aesthetic hair styled simply." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAOfYg8I6vcXjn9rTpc45WZkTOUcvSF5qf6Hdt-wdnu_l8mT6M0RYXAYjO9xmZlD9PG1d22F_VKAfogQTEH_3v9TIkV326WCzCcRwNCG5nbDvj1UQE7S1mbT4oOl7efsNcQef0VYyKjwwtndPteXm6Z8Ce-HE7pENKMZm494L8nvfCNOmBUrBXEpQ6ONmYvWnzsdko9sdI1sPZu25C1qSnEG36FXAmaHrpYZpkkDWc"/>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Maya Lin</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Residente • Oriental Contemporâneo &amp; Botânica Líquida</p>
+<span class="inline-block mt-0.5 font-label-caps text-[10px] uppercase text-outline px-1.5 py-0.5 rounded bg-surface-container">Atelier Jardins • Sala 3</span>
+</div>
+</div>
+<div class="sm:text-right bg-surface-container/60 sm:bg-transparent p-space-sm sm:p-0 rounded-lg">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-outline block">Data Proposta</span>
+<p class="font-headline-sm text-headline-sm text-on-surface leading-tight mt-0.5">12 Nov 2025</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Janela da Tarde (15:00 BRT)</p>
+</div>
+</div>
+<!-- Artwork Specifications -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md pt-space-xs">
+<div class="md:col-span-2 space-y-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-outline">Conceito Submetido</span>
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold">
+                    "Composição de Peônia Imperial Negra com Fluxo de Água Japonesa"
+                  </h3>
+<div class="flex flex-wrap items-center gap-y-1 gap-x-3 pt-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">accessibility_new</span>
+<span>Costela &amp; Flanco Lateral Direito</span>
+</span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">straighten</span>
+<span>Grande (18 × 12 cm)</span>
+</span>
+</div>
+</div>
+<div class="space-y-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-outline">Referências Submetidas</span>
+<div class="flex items-center gap-space-xs">
+<div class="relative w-16 h-16 rounded-lg overflow-hidden border border-outline-variant/30 group/thumb cursor-pointer bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Monochromatic Japanese Irezumi style fluid water flow wash drawing with dark sumi ink splashes on fine rice paper." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeVpavUu9Wn64J2rsPF0mfLSSKLmy8EfYa9BMCLguxA2m8saKAVhKh4H7rRVTI2cQhQtLHIqxoJZgoHGqYeWCCDVt3sI41jhAP_RJw4QY7eTS5FXOQmRHWQpGJTs6BDIDgxT5EQf_zX5G4Luo3pE8lLo4d9YXfMyikVC6e7wS9MRLgZzJXLwHcoW9Z1ZbdNULSMYQBwZuUQZ6bWMGrTQ79AqlNbekPNvs_Cf2q_Qo"/>
+<span class="absolute bottom-1 right-1 font-label-caps text-[9px] uppercase px-1 bg-surface-container-lowest/80 text-on-surface rounded">Ref 1</span>
+</div>
+<div class="relative w-16 h-16 rounded-lg overflow-hidden border border-outline-variant/30 group/thumb cursor-pointer bg-surface-container">
+<img class="w-full h-full object-cover" data-alt="Detailed dark peony botanical sketch with bold black outlines and delicate fine-line dot shading on charcoal canvas." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAnEasB9MBwtJzSw9XNId6WstQuEOv8Z4vi82svcqQiXqQhUFrjKk2whFs3zusbip1Z3Q-vOlnj1yr5ZPQhyNE4RJZJcHK8bP5Yjp7EvNaPpH_IqBD2VyfS7c-LsvgbWlWqfRumk4pLiS4sA9lntyBAFEBt4Rl2Zf2UgmZHuBAeLhRP-I4QtPSs6JOZJE5zCw2PPCtreIc3HdOMlkbpFym3R667ixxSxrowwgioXK4"/>
+<span class="absolute bottom-1 right-1 font-label-caps text-[9px] uppercase px-1 bg-surface-container-lowest/80 text-on-surface rounded">Ref 2</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Curatorial Triage Status Notice -->
+<div class="p-space-md rounded-lg bg-surface-container border border-outline-variant/20 flex items-start gap-space-md">
+<span class="material-symbols-outlined text-[#facc15] shrink-0 text-[20px] mt-0.5">motion_photos_on</span>
+<div class="text-on-surface-variant font-body-sm text-body-sm space-y-0.5">
+<strong class="text-on-surface font-semibold block">Curadoria em Andamento:</strong>
+<p>A residente Maya Lin está avaliando a curvatura anatômica muscular e a densidade de linhas para esta peça. Tempo médio estimado de retorno com confirmação da bancada: <span class="text-secondary font-semibold">até 8 horas</span>.</p>
+</div>
+</div>
+<!-- Action Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-xs border-t border-outline-variant/20">
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg transition-colors border border-outline-variant/30">
+<span class="material-symbols-outlined text-[18px]">edit_note</span>
+<span>Editar Ideia / Enviar Imagens</span>
+</button>
+<a class="inline-flex items-center gap-space-xs text-on-surface-variant hover:text-on-surface font-label-lg text-label-lg transition-colors py-space-xs px-space-sm" href="#">
+<span class="material-symbols-outlined text-[18px]">chat_bubble_outline</span>
+<span>Dúvidas com o Concierge</span>
+</a>
+</div>
+<button class="inline-flex items-center gap-space-xs text-outline hover:text-error transition-colors font-label-md text-label-md py-space-xs cursor-pointer" onclick="toggleCancelModal(true)">
+<span class="material-symbols-outlined text-[16px]">cancel</span>
+<span>Cancelar Solicitação (Sem Custos)</span>
+</button>
+</div>
+</div>
+</article>
+<!-- CARD 3: FINISHED (Concluded & Healed History) -->
+<article class="booking-card group-history relative bg-surface-container-low rounded-xl border border-outline-variant/20 overflow-hidden hover:border-outline-variant/40 transition-all duration-300" data-status-type="finished">
+<!-- Left Accent Status Stripe -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-[#94a3b8]"></div>
+<div class="p-space-lg flex flex-col gap-space-md">
+<!-- Top Row: Ref & FINISHED status badge -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pl-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-outline">Ref. #INK-7230</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-secondary">Obra Concluída no Atelier</span>
+</div>
+<!-- RFC Semantic Badge: FINISHED -->
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#94a3b8]/10 border border-[#94a3b8]/30 text-[#cbd5e1] font-label-caps text-label-caps uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">done_all</span>
+<span>Finalizado &amp; Cicatrizado</span>
+</div>
+</div>
+<!-- Artist & Historical Execution Dates -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pt-space-xs border-b border-outline-variant/20 pb-space-md">
+<div class="flex items-center gap-space-md">
+<div class="relative w-14 h-14 rounded-full overflow-hidden border border-outline-variant/40 shrink-0">
+<img class="w-full h-full object-cover" data-alt="Portrait of master dark realism tattoo artist Lucas Kael with intense expression, dramatic chiaroscuro side lighting against deep black atelier background." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCO6n0cRBlxCv37qbZhd5E0GmToaZTq1GZNfKsBSggcM-PYDOqdcTjr5Fw0IKFQ6HlJ3xHN_2POPRvdbWWqyIaTzefIY-Rx66NcWf2FNVpxRnwH86awfIkrqi0v5SXz2lXd0P4LTlLeLa2m3xt90U4ZqkvAr8W4t26LAtMWI5JQTcVZMVKndHL9yFtEs5hlRaFG5dn7AZkCgW4YDXR_6yi8eA0tB1wEhhVISp7R9Gw"/>
+</div>
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Lucas Kael</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Dark Realism &amp; Chiaroscuro Escultural</p>
+<span class="inline-block mt-0.5 font-label-caps text-[10px] uppercase text-outline px-1.5 py-0.5 rounded bg-surface-container">Atelier São Paulo • Suíte B</span>
+</div>
+</div>
+<div class="sm:text-right bg-surface-container/60 sm:bg-transparent p-space-sm sm:p-0 rounded-lg">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-outline block">Sessão Concluída</span>
+<p class="font-headline-sm text-headline-sm text-on-surface leading-tight mt-0.5">18 Ago 2025</p>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Concluído em 2 sessões (Total 9h de agulha)</p>
+</div>
+</div>
+<!-- Artwork Details -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md pt-space-xs">
+<div class="md:col-span-2 space-y-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-outline">Registro da Obra</span>
+<h3 class="font-body-lg text-body-lg text-on-surface font-semibold">
+                    "Retrato Escultural de Apolo em Mármore Helênico e Fundo Sombreado"
+                  </h3>
+<div class="flex flex-wrap items-center gap-y-1 gap-x-3 pt-1 text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">accessibility_new</span>
+<span>Braço / Bíceps Superior</span>
+</span>
+<span>•</span>
+<span class="flex items-center gap-1">
+<span class="material-symbols-outlined text-[16px] text-secondary">schedule</span>
+<span>2 Sessões Concluídas</span>
+</span>
+</div>
+</div>
+<!-- Finished Tattoo Photo -->
+<div class="space-y-space-xs">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-outline">Fotografia de Arquivo</span>
+<div class="relative w-24 h-24 rounded-lg overflow-hidden border border-outline-variant/30 group/thumb cursor-pointer bg-surface-container">
+<img class="w-full h-full object-cover group-hover/thumb:scale-105 transition-transform duration-300" data-alt="High resolution studio photography of a finished dark realistic tattoo on upper arm depicting Apollo marble statue with chiaroscuro shading fully healed on male skin." src="https://lh3.googleusercontent.com/aida-public/AB6AXuC0-z7Hid1IJYpRX6uSo-FJBEuVDk9Zhk90L5aqtezpUIS1iYBPEJnKMEmGE97abmEfIWXAxVuDR2Um75BkIopEBEpvP2Qk95XTGn7SgZub3KZI3lkQGz1SvpLWw56gVc6GUTzPqTFJAOQg5rwKRCwEFoeR9Pw5toTEOkGxTn-VxpDnuOM5kq0EuHTx87J50AUBSzqWW0qBQny3o9jPTjhCbNnDmz51plV8ogrApX4"/>
+<div class="absolute inset-0 bg-gradient-to-t from-black/80 via-transparent to-transparent flex items-end p-1.5">
+<span class="font-label-caps text-[9px] uppercase text-secondary font-bold">Arquivo 4K</span>
+</div>
+</div>
+</div>
+</div>
+<!-- Healed Protocol Badge & Warranty -->
+<div class="p-space-md rounded-lg bg-surface-container border border-outline-variant/20 flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm">
+<div class="w-8 h-8 rounded-full bg-[#10b981]/10 flex items-center justify-center text-[#34d399] shrink-0">
+<span class="material-symbols-outlined text-[18px]">verified_user</span>
+</div>
+<div>
+<span class="font-label-caps text-label-caps uppercase text-[#34d399] font-bold block">Cicatrização 100% Concluída</span>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Pele estabilizada. Cobertura de retoque gratuito válida até 18 de Fevereiro de 2026.</p>
+</div>
+</div>
+</div>
+<!-- Action Bar -->
+<div class="flex flex-wrap items-center justify-between gap-space-md pt-space-xs border-t border-outline-variant/20">
+<div class="flex flex-wrap items-center gap-space-sm">
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg transition-colors border border-outline-variant/30">
+<span class="material-symbols-outlined text-[18px]">share</span>
+<span>Ver na Vitrine Pública</span>
+</button>
+<button class="inline-flex items-center gap-space-xs px-space-md py-space-sm rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface font-label-lg text-label-lg transition-colors border border-outline-variant/30">
+<span class="material-symbols-outlined text-[18px]">star</span>
+<span>Avaliar Experiência</span>
+</button>
+</div>
+<a class="inline-flex items-center gap-space-xs text-secondary hover:text-primary font-label-lg text-label-lg transition-colors py-space-xs" href="#">
+<span class="material-symbols-outlined text-[18px]">brush</span>
+<span>Solicitar Retoque ou Continuação</span>
+</a>
+</div>
+</div>
+</article>
+<!-- CARD 4: CANCELLED (Audit Trail RFC 7807) -->
+<article class="booking-card group-history relative bg-surface-container-low rounded-xl border border-outline-variant/20 overflow-hidden hover:border-outline-variant/40 transition-all duration-300" data-status-type="cancelled">
+<!-- Left Accent Status Stripe -->
+<div class="absolute left-0 top-0 bottom-0 w-1.5 bg-[#ef4444]"></div>
+<div class="p-space-lg flex flex-col gap-space-md">
+<!-- Top Row: Ref & CANCELLED status badge -->
+<div class="flex flex-wrap items-center justify-between gap-space-sm pl-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-outline">Ref. #INK-6401</span>
+<span class="text-outline-variant">•</span>
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-error">Registro Cancelado &amp; Auditado</span>
+</div>
+<!-- RFC Semantic Badge: CANCELLED -->
+<div class="inline-flex items-center gap-1.5 px-2.5 py-1 rounded-full bg-[#ef4444]/10 border border-[#ef4444]/30 text-[#f87171] font-label-caps text-label-caps uppercase tracking-wider">
+<span class="material-symbols-outlined text-[14px]">cancel</span>
+<span>Cancelado Sem Ônus</span>
+</div>
+</div>
+<!-- Basic Summary -->
+<div class="flex flex-col sm:flex-row sm:items-center justify-between gap-space-md pt-space-xs border-b border-outline-variant/20 pb-space-md">
+<div>
+<h2 class="font-headline-sm text-headline-sm text-on-surface">Renan Costa</h2>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Composição Geométrica Pequena • Pulso</p>
+</div>
+<div class="sm:text-right">
+<span class="font-label-caps text-label-caps uppercase tracking-wider text-outline block">Data Original</span>
+<p class="font-headline-sm text-headline-sm text-on-surface-variant mt-0.5">04 Junho 2025</p>
+</div>
+</div>
+<!-- RFC 7807 Problem Detail & Audit Notice -->
+<div class="p-space-md rounded-lg bg-surface-container border border-outline-variant/20 flex items-start gap-space-md">
+<span class="material-symbols-outlined text-[#f87171] shrink-0 text-[20px] mt-0.5">history_toggle_off</span>
+<div class="text-on-surface-variant font-body-sm text-body-sm space-y-0.5">
+<div class="flex items-center gap-space-xs">
+<strong class="text-on-surface font-semibold">Nota de Auditoria de Cancelamento:</strong>
+<span class="font-label-caps text-[10px] text-outline uppercase px-1 rounded bg-surface-container-high">RFC 7807 Compliant</span>
+</div>
+<p>Cancelamento efetuado pelo cliente com mais de 72 horas de antecedência. Sinal caução integral (R$ 350,00) estornado para o cartão de crédito de origem sob NSU #84910284.</p>
+</div>
+</div>
+<!-- Action Bar -->
+<div class="flex items-center justify-between pt-space-xs border-t border-outline-variant/20">
+<a class="inline-flex items-center gap-space-xs text-secondary hover:text-primary font-label-lg text-label-lg transition-colors" href="#">
+<span class="material-symbols-outlined text-[18px]">replay</span>
+<span>Reativar Proposta com Nova Data</span>
+</a>
+<span class="font-label-caps text-label-caps text-outline uppercase">Arquivado em Registro Permanente</span>
+</div>
+</div>
+</article>
+</div>
+<!-- Right Companion Deck (4 Cols) -->
+<aside class="lg:col-span-4 flex flex-col gap-space-lg">
+<!-- Card: Interactive Placement Anatomy Map Preview -->
+<div class="p-space-lg rounded-xl bg-surface-container-low border border-outline-variant/20 flex flex-col gap-space-md">
+<div class="flex items-center justify-between">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-bold">Mapa Anatômico Pessoal</span>
+<span class="font-label-caps text-label-caps text-outline uppercase">WIP &amp; Healed</span>
+</div>
+<!-- Stylized Minimal Charcoal Wireframe Anatomical Model -->
+<div class="relative w-full h-64 bg-surface-container rounded-lg flex items-center justify-center p-space-md overflow-hidden border border-outline-variant/10">
+<svg class="h-full w-auto text-outline-variant/40" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewbox="0 0 200 400">
+<!-- Abstract Human Silhouette -->
+<!-- Head -->
+<circle cx="100" cy="45" r="22" stroke="currentColor"></circle>
+<!-- Neck & Shoulders -->
+<path d="M92 67 L92 85 L60 100 L40 160 L32 230 L25 280"></path>
+<path d="M108 67 L108 85 L140 100 L160 160 L168 230 L175 280"></path>
+<!-- Torso Center Lines -->
+<path d="M60 100 L68 200 L75 240 L65 320 L60 380"></path>
+<path d="M140 100 L132 200 L125 240 L135 320 L140 380"></path>
+<path d="M100 85 L100 240"></path>
+<!-- Subtle Contour Ribs -->
+<path d="M80 140 Q100 150 120 140" stroke-opacity="0.3"></path>
+<path d="M78 165 Q100 175 122 165" stroke-opacity="0.3"></path>
+<path d="M76 190 Q100 200 124 190" stroke-opacity="0.3"></path>
+<!-- Active WIP Highlight Marker 1 (Inner Left Forearm - #INK-8842) -->
+<circle cx="34" cy="225" fill="#d4af37" fill-opacity="0.25" r="7" stroke="#d4af37" stroke-width="2"></circle>
+<circle class="animate-spin" cx="34" cy="225" r="14" stroke="#d4af37" stroke-dasharray="2 2" stroke-width="1" style="animation-duration: 8s;"></circle>
+<!-- Active WIP Highlight Marker 2 (Right Rib / Flank - #INK-9104) -->
+<circle cx="128" cy="180" fill="#eab308" fill-opacity="0.2" r="6" stroke="#eab308" stroke-width="1.5"></circle>
+<!-- Healed Work Marker 3 (Left Bicep - #INK-7230) -->
+<circle cx="48" cy="140" fill="#94a3b8" fill-opacity="0.4" r="5" stroke="#cbd5e1" stroke-width="1.5"></circle>
+</svg>
+<!-- Floating Map Legend Tooltip -->
+<div class="absolute bottom-2 left-2 right-2 bg-surface-container-lowest/90 backdrop-blur-md p-2 rounded border border-outline-variant/30 flex items-center justify-between text-[11px] font-label-md">
+<span class="flex items-center gap-1 text-primary">
+<span class="w-2 h-2 rounded-full bg-primary inline-block"></span> Antebraço (24 Out)
+                </span>
+<span class="flex items-center gap-1 text-[#facc15]">
+<span class="w-2 h-2 rounded-full bg-[#facc15] inline-block"></span> Costela (Triagem)
+                </span>
+<span class="flex items-center gap-1 text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-[#94a3b8] inline-block"></span> Bíceps (Cicatrizado)
+                </span>
+</div>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">
+              Mapeamento tridimensional das peças corporais executadas e em desenvolvimento no ateliê.
+            </p>
+</div>
+<!-- Card: Guia do Colecionador InkCraft -->
+<div class="p-space-lg rounded-xl bg-surface-container-low border border-outline-variant/20 flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs text-secondary">
+<span class="material-symbols-outlined text-[20px]">menu_book</span>
+<h3 class="font-label-caps text-label-caps uppercase tracking-widest font-bold">Guia do Colecionador</h3>
+</div>
+<div class="space-y-space-md">
+<div class="flex items-start gap-space-sm pb-space-sm border-b border-outline-variant/20">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">clean_hands</span>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Preparo de Bancada</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Hidratação contínua e sono regulado. Evite exposição solar 10 dias antes.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm pb-space-sm border-b border-outline-variant/20">
+<span class="material-symbols-outlined text-secondary text-[18px] shrink-0 mt-0.5">healing</span>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Derm Protective Film</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Mantenha a película selada por 72h. Lavagem suave com água morna e sabonete neutro.</p>
+</div>
+</div>
+<div class="flex items-start gap-space-sm">
+<span class="material-symbols-outlined text-error text-[18px] shrink-0 mt-0.5">medical_services</span>
+<div>
+<h4 class="font-label-lg text-label-lg text-on-surface">Linha Dermatológica Direta</h4>
+<p class="font-body-sm text-body-sm text-on-surface-variant">Canal assistido 24h para reações atípicas ou dúvidas sobre a derme pigmentada.</p>
+<a class="inline-block mt-1 font-label-md text-label-md text-secondary hover:underline" href="#">Acionar Suporte Clínico →</a>
+</div>
+</div>
+</div>
+</div>
+<!-- Card: Precisa de Nova Obra? -->
+<div class="p-space-lg rounded-xl bg-gradient-to-br from-surface-container via-surface-container-low to-surface-container-lowest border border-secondary/30 relative overflow-hidden flex flex-col gap-space-md">
+<div class="space-y-space-xs relative z-10">
+<span class="font-label-caps text-label-caps uppercase tracking-widest text-secondary font-bold">Expansão de Coleção</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Planejando sua próxima comissão?</h3>
+<p class="font-body-sm text-body-sm text-on-surface-variant leading-relaxed">
+                Nossos mestres residentes abrem lotes curados com até 90 dias de antecedência para obras autorais sob medida.
+              </p>
+</div>
+<div class="pt-space-xs relative z-10">
+<a class="w-full inline-flex items-center justify-center gap-space-xs px-space-md py-space-sm rounded-lg bg-primary hover:bg-primary-fixed text-on-primary font-label-lg text-label-lg font-semibold shadow-[0_0_20px_-4px_rgba(212,175,55,0.25)] transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]">brush</span>
+<span>Iniciar Nova Solicitação</span>
+</a>
+</div>
+<!-- Ambient Glow Ornament inside card -->
+<div class="absolute -right-8 -bottom-8 w-32 h-32 bg-primary/10 rounded-full blur-2xl pointer-events-none"></div>
+</div>
+</aside>
+</div>
+</div>
+</section>
+<!-- Interactive Modal: Cancelamento / Reagendamento (RFC 7807 Compliant Flow) -->
+<div class="hidden fixed inset-0 z-50 flex items-center justify-center p-gutter bg-black/80 backdrop-blur-md" id="cancel-modal">
+<div class="relative w-full max-w-lg bg-surface-container-low rounded-xl border border-outline-variant/40 shadow-[0_24px_48px_-12px_rgba(0,0,0,0.85)] p-space-lg flex flex-col gap-space-md">
+<div class="flex items-center justify-between pb-space-sm border-b border-outline-variant/20">
+<div class="flex items-center gap-space-xs text-error">
+<span class="material-symbols-outlined text-[22px]">warning</span>
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Gestão de Sessão</h3>
+</div>
+<button class="text-on-surface-variant hover:text-on-surface transition-colors cursor-pointer" onclick="toggleCancelModal(false)">
+<span class="material-symbols-outlined text-[20px]">close</span>
+</button>
+</div>
+<div class="space-y-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<p class="text-on-surface font-semibold">Política de Bancada &amp; Caução InkCraft:</p>
+<p>Cancelamentos ou reagendamentos comunicados com mais de <strong class="text-secondary">48 horas de antecedência</strong> mantêm o saldo do sinal caução (R$ 400,00) 100% preservado como crédito para data futura ou estorno integral.</p>
+</div>
+<div class="space-y-space-xs">
+<label class="font-label-caps text-label-caps uppercase tracking-wider text-outline block" for="cancel-reason">Motivo do Ajuste</label>
+<select class="w-full px-space-md py-space-sm bg-surface-container rounded-lg border border-outline-variant/40 text-on-surface font-body-sm text-body-sm focus:outline-none focus:border-secondary transition-all" id="cancel-reason">
+<option>Incompatibilidade imprevista de agenda</option>
+<option>Aguardando cicatrização de outra derme</option>
+<option>Recomendação médica dermatológica</option>
+<option>Desejo alterar o conceito da comissão</option>
+<option>Outro motivo particular</option>
+</select>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-end gap-space-sm pt-space-sm border-t border-outline-variant/20">
+<button class="w-full sm:w-auto px-space-md py-space-sm rounded-lg text-on-surface hover:bg-surface-container font-label-lg text-label-lg transition-colors cursor-pointer" onclick="toggleCancelModal(false)">
+          Manter Minha Sessão
+        </button>
+<button class="w-full sm:w-auto px-space-md py-space-sm rounded-lg bg-error-container text-on-error-container hover:bg-error/30 font-label-lg text-label-lg font-semibold transition-all cursor-pointer" onclick="toggleCancelModal(false); alert('Solicitação registrada. Nosso concierge entrará em contato via WhatsApp dentro de 15 minutos.');">
+          Confirmar Ajuste / Cancelamento
+        </button>
+</div>
+</div>
+</div>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/30"><div class="w-full px-gutter md:px-margin py-space-xl"><div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-space-xl mb-space-xl"><div class="space-y-space-sm"><div class="flex items-center gap-space-sm"><img alt="InkCraft Studio Logo" class="h-7 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAf_dQRvL-EWcqhqiDd0Ur0kw5Fr2SYXkTGY8TFf1skxUfYpWtfXTVIZhQ_GX4vLKBcQnqaEtDrYrrHBjGVGg4GDZT0ni6SHT0grZSMK-IJq0S3clCCtV4hIbCIYZo6g49bvQGYYgvVazJxyvfMfEw42tzOTh75lW_DvWPyX200GMrWiFvHOOXmkJAGmRaADG87xeqOpEQC6qTMX41UICXwlQyCeWg7NqZypZX40TI"/><span class="font-headline-sm text-headline-sm tracking-tight text-on-surface">INKCRAFT</span></div><p class="font-body-sm text-body-sm text-on-surface-variant max-w-sm">Ateliê exclusivo de alta tatuagem e expressão artística bespoke. Rigor anatômico, técnica refinada e atmosfera de contemplação.</p><div class="pt-space-xs flex items-center gap-space-xs"><span class="w-2 h-2 rounded-full bg-tertiary animate-pulse"></span><span class="font-label-caps text-label-caps text-on-surface-variant uppercase tracking-wider">Estúdio Operando em São Paulo &amp; Curitiba</span></div></div><div class="space-y-space-sm"><h3 class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">O Estúdio</h3><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li>Alameda dos Alfarrábios, 1280 - Jardins</li><li>São Paulo - SP, Brasil</li><li class="pt-space-xs text-on-surface">contato@inkcraft.art</li><li>+55 (11) 3088-4921</li></ul></div><div class="space-y-space-sm"><h3 class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Horários de Atendimento</h3><div class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><p class="flex justify-between max-w-xs"><span>Terça a Sexta</span><span class="text-on-surface">11h — 20h</span></p><p class="flex justify-between max-w-xs"><span>Sábado</span><span class="text-on-surface">10h — 19h</span></p><p class="flex justify-between max-w-xs"><span>Domingo &amp; Segunda</span><span class="text-outline">Exclusivo para Convidados</span></p></div></div><div class="space-y-space-sm"><h3 class="font-label-caps text-label-caps uppercase text-secondary tracking-widest">Conectar</h3><p class="font-body-sm text-body-sm text-on-surface-variant">Acompanhe exposições inéditas, aberturas de agenda e drops de flash art.</p><div class="flex items-center gap-space-sm pt-space-xs"><a aria-label="Instagram" class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">camera</span></a><a aria-label="Portfólio Digital" class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">palette</span></a><a aria-label="Localização" class="w-9 h-9 rounded-lg bg-surface-container flex items-center justify-center text-on-surface-variant hover:text-primary hover:bg-surface-container-high transition-colors" href="#"><span class="material-symbols-outlined text-[18px]">location_on</span></a></div></div></div><div class="pt-space-lg border-t border-outline-variant/20 flex flex-col sm:flex-row items-center justify-between gap-space-md text-on-surface-variant font-label-md text-label-md"><p>© 2025 INKCRAFT Atelier de Tatuagem. Todos os direitos reservados.</p><div class="flex items-center gap-space-md"><a class="hover:text-on-surface transition-colors" href="#">Privacidade</a><a class="hover:text-on-surface transition-colors" href="#">Termos &amp; Consentimento</a><a class="hover:text-on-surface transition-colors" href="#">Biossegurança</a></div></div></div></footer></body></html>
